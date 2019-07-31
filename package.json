@@ -1,0 +1,18 @@
+{
+  "name": "jbakebwa.dev",
+  "version": "1.0.0",
+  "description": "Jonathan Bakebwa Web Development Blog Site",
+  "main": "index.js",
+  "author": "Jonathan Bakebwa | codebender828",
+  "license": "MIT",
+  "scripts": {
+    "dev": "saber",
+    "build": "saber build"
+  },
+  "dependencies": {
+    "prismjs": "^1.17.1",
+    "saber": "^0.7.0",
+    "saber-highlight-css": "^0.1.0",
+    "saber-plugin-prismjs": "^0.2.1"
+  }
+}
