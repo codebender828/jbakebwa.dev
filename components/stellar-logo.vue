@@ -1,0 +1,50 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 40.67 52.46"
+    :fill="fillColor"
+    :style="{ '--fill-color': fillColor }"
+  >
+    <title>stellar-svg</title>
+    <g
+      id="Layer_2"
+      data-name="Layer 2"
+    >
+      <g id="logo">
+        <polygon
+          class="polygon-fill"
+          points="21.09 0 18.28 10.93 28.12 10.93 21.09 0"
+        />
+        <polygon
+          class="polygon-fill"
+          points="29.42 27.8 40.67 32.88 33.42 22.07 29.42 27.8"
+        />
+        <polygon
+          class="polygon-fill"
+          points="13.2 31.69 8.54 52.46 38.08 13.41 0 13.41 12.76 20.66 6.72 22.51 5.45 25.8 9.63 24.23 5.14 26.61 0.87 37.68 23.69 19.9 16.87 17.2 29.42 16.77 13.2 31.69"
+        />
+      </g>
+    </g>
+  </svg>
+</template>
+
+<script>
+  export default {
+    name: 'StellarLogo',
+    props: {
+      fillColor: {
+        type: String,
+        default: 'currentColor'
+      }
+    }
+  }
+</script>
+
+<style lang="scss">
+  :root {
+    --fill-color: currentColor;
+  }
+  .polygon-fill {
+    fill: var(--fill-color);
+  }
+</style>
