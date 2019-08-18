@@ -5880,6 +5880,14 @@ saber-plugin-prismjs@^0.2.1:
   dependencies:
     saber-highlighter-prism "^0.3.1"
 
+saber-plugin-query-posts@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/saber-plugin-query-posts/-/saber-plugin-query-posts-0.4.1.tgz#3de242b32303ae52e119ada0ba685250666038d7"
+  integrity sha512-qFRscom9eDSptHSkRvIXIPnKRTQS+mFLK9fk8s18NNI7oYhtlYlDeM+9Iz7C1MNTN8XhcPtwTvQm9l2NR+f28A==
+  dependencies:
+    slugo "^0.2.3"
+    url-join "^4.0.0"
+
 saber-utils@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/saber-utils/-/saber-utils-0.2.0.tgz#5106dbf838638824a9c37c7e52a11d9154a35f2d"
@@ -6870,6 +6878,11 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+
+url-join@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/url-join/-/url-join-4.0.1.tgz#b642e21a2646808ffa178c4c5fda39844e12cde7"
+  integrity sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA==
 
 url-loader@^2.0.1, url-loader@^2.1.0:
   version "2.1.0"

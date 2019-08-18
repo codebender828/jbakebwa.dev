@@ -5,6 +5,9 @@ module.exports = {
   plugins: [
     {
       resolve: 'saber-plugin-prismjs'
+    },
+    {
+      resolve: 'saber-plugin-query-posts'
     }
   ]
 }

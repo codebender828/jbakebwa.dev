@@ -2,13 +2,16 @@
   <nav
     class="navbar flex fixed top-0 left-0 right-0 z-50 items-center justify-between flex-wrap bg-dirt px-6 py-3"
   >
-    <div class="flex items-center flex-shrink-0 text-light mr-6">
+    <saber-link
+      to="/"
+      class="flex items-center flex-shrink-0 text-light mr-6"
+    >
       <stellar-logo
         fill-color="#fff"
         class="h-8 w-8 mr-2"
       />
       <span class="font-semibold text-xl font-mono tracking-tight">Stellar Dev</span>
-    </div>
+    </saber-link>
     <div
       class="block md:hidden outline-none "
     >
@@ -29,22 +32,28 @@
     >
       <div class="text-sm md:flex font-mono text-light md:w-full">
         <saber-link
-          to="#responsive-header"
+          to="/"
           class="block mt-4 ml-auto md:inline-block md:mt-0 text-purple-200 hover:text-white mr-4"
         >
-          Docs
+          Home
         </saber-link>
         <saber-link
-          to="#responsive-header"
+          to="/blog.html"
           class="block mt-4 md:inline-block md:mt-0 text-purple-200 hover:text-white mr-4"
         >
-          Examples
+          Blog
         </saber-link>
         <saber-link
-          to="#responsive-header"
+          to="/about.html"
+          class="block mt-4 md:inline-block md:mt-0 text-purple-200 hover:text-white mr-4"
+        >
+          About
+        </saber-link>
+        <saber-link
+          to="/contact.html"
           class="block mt-4 md:inline-block md:mt-0 text-purple-200 hover:text-white"
         >
-          Blog
+          Contact
         </saber-link>
       </div>
     </div>
