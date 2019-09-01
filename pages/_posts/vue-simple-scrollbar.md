@@ -1,13 +1,15 @@
 ---
-title: Vue Simple Scrollbar
+title: 🦉 Vue Simple Scrollbar
 date: 2019-08-14
 layout: page
+tags:
+  - ssr
+  - csr
 ---
 
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/codebender828/vue-simple-scrollbar/master.svg?style=flat-square)](https://codecov.io/gh/codebender828/vue-simple-scrollbar) [![CircleCI](https://circleci.com/gh/codebender828/vue-simple-scrollbar.svg?style=svg)](https://circleci.com/gh/codebender828/vue-simple-scrollbar) [![Netlify Status](https://api.netlify.com/api/v1/badges/cf493ebe-9a4a-45df-94ed-162de0ee999b/deploy-status)](https://app.netlify.com/sites/vigorous-hypatia-ceea9b/deploys)
+A simple friendly lightweight scrollbar to make take your scrollbar game to the next level. 
 
-# 🦉 vue-simple-scrollbar
-A simple friendly lightweight scrollbar to make take your scrollbar game to the next level. This awesome package was ported from the awesome [simple-scrollbar](https://github.com/buzinas/simple-scrollbar)
+This awesome package was ported from the awesome [simple-scrollbar](https://github.com/buzinas/simple-scrollbar)
 
 ## How it works?
 Vue simple scrollbar creates an elegant, customizable lightweight javascript scrollbar for content that overflows the `vue-simple-scrollbar`'s parent element. Out of the box, `vue-simple-scrollbar` gives you:

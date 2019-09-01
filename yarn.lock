@@ -770,6 +770,44 @@
     postcss-load-config "^2.0.0"
     schema-utils "^1.0.0"
 
+"@fortawesome/fontawesome-common-types@^0.2.22":
+  version "0.2.22"
+  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.22.tgz#3f1328d232a0fd5de8484d833c8519426f39f016"
+  integrity sha512-QmEuZsipX5/cR9JOg0fsTN4Yr/9lieYWM8AQpmRa0eIfeOcl/HLYoEa366BCGRSrgNJEexuvOgbq9jnJ22IY5g==
+
+"@fortawesome/fontawesome-svg-core@^1.2.22":
+  version "1.2.22"
+  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.22.tgz#9a6117c96c8b823c7d531000568ac75c3c02e123"
+  integrity sha512-Q941E4x8UfnMH3308n0qrgoja+GoqyiV846JTLoCcCWAKokLKrixCkq6RDBs8r+TtAWaLUrBpI+JFxQNX/WNPQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.22"
+
+"@fortawesome/free-brands-svg-icons@^5.10.2":
+  version "5.10.2"
+  resolved "https://npm.fontawesome.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-5.10.2.tgz#01a227e37ca96237a5a9e8681d926a36fd6195c0"
+  integrity sha512-r5Dxr2h8f9bEI7F/gj/2v1OX9S6DMif9ZKR2VFQCSXHwahojLlOWnFILYsrjhzOISESkh6WDL9IOdkdbKM7KPw==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.22"
+
+"@fortawesome/pro-duotone-svg-icons@^5.10.2":
+  version "5.10.2"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/pro-duotone-svg-icons-5.10.2.tgz#acd9817b1e663d6d8af7b3cd5bd87b17ba8dda25"
+  integrity sha512-jdKiOhophNs84NfQWhtql1ycn+iZux10AZ8De1mXOXY/i2nRiY2/WOmTBo+ABQmH8bwcaLuQwt1ulMIblu85jA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.22"
+
+"@fortawesome/pro-light-svg-icons@^5.10.2":
+  version "5.10.2"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-light-svg-icons/-/pro-light-svg-icons-5.10.2.tgz#86a9ec2c660c31b28c0f33b496dcf690257c333a"
+  integrity sha512-moE0VHMhEj2KmD5vXoEaB+TCgXamQL+/ONyz/VIcOkRAxGjc7jBSdnR2xFHwfv1rwbPqStrEih8MyrNtvhFLiQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.22"
+
+"@fortawesome/vue-fontawesome@^0.1.7":
+  version "0.1.7"
+  resolved "https://npm.fontawesome.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.1.7.tgz#121867297cafd141af78c67d92ab9f1ad4b7328b"
+  integrity sha512-YCw2Q2m4fxzyFsPOH3uDYMoJztTD+pT+AAyse4LFpbdrBg+r8ueaVT8BFnXEjrGwMDJJeXrwJ5AOC6q/JWBI4w==
+
 "@fullhuman/postcss-purgecss@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-1.2.0.tgz#a3207a0e1812f8b56fa49fba5796a1020f2756a8"
@@ -1954,6 +1992,11 @@ concat-stream@^1.5.0:
     inherits "^2.0.3"
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
+
+consola@^2.10.1:
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/consola/-/consola-2.10.1.tgz#4693edba714677c878d520e4c7e4f69306b4b927"
+  integrity sha512-4sxpH6SGFYLADfUip4vuY65f/gEogrzJoniVhNUYkJHtng0l8ZjnDCqxxrSVRHOHwKxsy8Vm5ONZh1wOR3/l/w==
 
 console-browserify@^1.1.0:
   version "1.1.0"
@@ -3816,6 +3859,13 @@ javascript-stringify@^2.0.0:
   resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-2.0.0.tgz#ef750216ae66504ffd670b68c8b8aa07bdf7b588"
   integrity sha512-zzK8+ByrzvOL6N92hRewwUKL0wN0TOaIuUjX0Jj8lraxWvr5wHYs2YTjaj2lstF+8qMv5cmPPef47va8NT8lDw==
 
+jest-coverage-badges@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/jest-coverage-badges/-/jest-coverage-badges-1.1.2.tgz#a70786b139fd8fb685db732e1e2d916d8a47287e"
+  integrity sha512-44A7i2xR6os8+fWk8ZRM6W4fKiD2jwKOLU9eB3iTIIWACd9RbdvmiCNpQZTOsUBhKvz7aQ/ASFhu5JOEhWUOlg==
+  dependencies:
+    mkdirp "0.5.1"
+
 joycon@^2.2.4:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/joycon/-/joycon-2.2.5.tgz#8d4cf4cbb2544d7b7583c216fcdfec19f6be1615"
@@ -4327,7 +4377,7 @@ mixin-object@^2.0.1:
     for-in "^0.1.3"
     is-extendable "^0.1.1"
 
-"mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
+mkdirp@0.5.1, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
@@ -4596,6 +4646,11 @@ npm-packlist@^1.1.6:
     console-control-strings "~1.1.0"
     gauge "~2.7.3"
     set-blocking "~2.0.0"
+
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
 nth-check@^1.0.2:
   version "1.0.2"
@@ -6146,6 +6201,11 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
+simple-scrollbar@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/simple-scrollbar/-/simple-scrollbar-0.4.0.tgz#cd0b7a4f8dcf7c0bb8d4c83b0ac5b0acebf2579b"
+  integrity sha512-mK4cZtoa7UdmwxxMT44kXF3SdNs+Ml/IiFTML0wDJpDi3zVRevlkiJcrZJ7vVyTKUw6OmDyijdNJecHpnd5y3w==
+
 simple-swizzle@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
@@ -7027,6 +7087,11 @@ vue-router@^3.0.6:
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.7.tgz#b36ca107b4acb8ff5bc4ff824584059c23fcb87b"
   integrity sha512-utJ+QR3YlIC/6x6xq17UMXeAfxEvXA0VKD3PiSio7hBOZNusA1jXcbxZxVEfJunLp48oonjTepY8ORoIlRx/EQ==
 
+vue-router@^3.1.2:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.1.3.tgz#e6b14fabc0c0ee9fda0e2cbbda74b350e28e412b"
+  integrity sha512-8iSa4mGNXBjyuSZFCCO4fiKfvzqk+mhL0lnKuGcQtO1eoj8nq3CmbEG8FwK5QqoqwDgsjsf1GDuisDX4cdb/aQ==
+
 vue-server-renderer@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue-server-renderer/-/vue-server-renderer-2.6.10.tgz#cb2558842ead360ae2ec1f3719b75564a805b375"
@@ -7040,6 +7105,19 @@ vue-server-renderer@^2.6.10:
     resolve "^1.2.0"
     serialize-javascript "^1.3.0"
     source-map "0.5.6"
+
+vue-simple-scrollbar@^0.1.1, vue-simple-scrollbar@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/vue-simple-scrollbar/-/vue-simple-scrollbar-0.1.8.tgz#677005632a8cbe218afa447bd99629dd20b877c7"
+  integrity sha512-W2Zzyix435q5kuDGmxcotTE7ovYzLu/WMRSo7fY0XGlu7ak2B4lwY+C+hDv+TWP83UHyu9x1E3szvjp/7qVN5Q==
+  dependencies:
+    core-js "^2.6.5"
+    jest-coverage-badges "^1.1.2"
+    nprogress "^0.2.0"
+    simple-scrollbar "^0.4.0"
+    vue "^2.6.10"
+    vue-router "^3.1.2"
+    vue-simple-scrollbar "^0.1.1"
 
 vue-style-loader@^4.1.0:
   version "4.1.2"

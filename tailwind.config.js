@@ -3,9 +3,10 @@ module.exports = {
     colors: {
       red: '#DF0058',
       maroon: '#912F56',
-      light: '#EAF2EF',
+      light: '#EFEFEF',
       dirt: '#5A474E',
       dark: '#0D090A',
+      vue: '#4FC08D',
       'dark-100': '#1B1B1B'
     },
     extend: {

@@ -10,7 +10,7 @@
         fill-color="#fff"
         class="h-8 w-8 mr-2"
       />
-      <span class="font-semibold text-xl font-mono tracking-tight">Stellar Dev</span>
+      <span class="font-semibold text-xl font-mono tracking-tight">Jonathan Bakebwa</span>
     </saber-link>
     <div
       class="block md:hidden outline-none "

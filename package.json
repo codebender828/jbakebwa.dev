@@ -10,6 +10,12 @@
     "build": "saber build"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/pro-duotone-svg-icons": "^5.10.2",
+    "@fortawesome/pro-light-svg-icons": "^5.10.2",
+    "@fortawesome/vue-fontawesome": "^0.1.7",
+    "consola": "^2.10.1",
     "node-sass": "^4.12.0",
     "prismjs": "^1.17.1",
     "saber": "^0.7.0",
@@ -18,7 +24,8 @@
     "saber-plugin-query-posts": "^0.4.1",
     "sass-loader": "^7.2.0",
     "tailwindcss": "^1.1.2",
-    "url-loader": "^2.1.0"
+    "url-loader": "^2.1.0",
+    "vue-simple-scrollbar": "^0.1.8"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",

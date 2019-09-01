@@ -1,10 +1,14 @@
 :root {
   // Theme Colors
-  --red: #DF0058;
-  --maroon: #912F56;
-  --light: #EAF2EF;
-  --dirt: #5A474E;
-  --dark: #0D090A;
+  --red: rgb(223, 0, 88);
+  --maroon: rgb(145, 47, 86);
+  --light: rgb(234, 242, 239);
+  --dirt: rgb(90, 71, 78);
+  --dark: rgb(13, 9, 10);
+
+  // Colors
+  --white: rgb(255, 255, 255);
+  --vue: #4fc08d;
 
   // Fonts
   --fira-code: 'Fira Code', monospace;

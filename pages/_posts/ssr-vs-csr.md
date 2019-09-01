@@ -4,13 +4,7 @@ date: 2019-07-08
 layout: blog
 ---
 
-[By Jonathan Bakebwa](https://www.jbakebwa.com)
-2019-07-08
-
-![Photograph by Aisha Taban](https://paper-attachments.dropbox.com/s_62216ECB7F75BCDC94FCA47872BD745FA8CC5487F65875CD57C1C53EB14B18E0_1562592073444_greece.jpeg)
-
-
-Yes. No? Maybe?
+The need to use Server side or Client-side rendering in your application is very much dependent on the nature of your application and the kind of experience you need to deliver to your users. 
 
 The need to use Server side or Client-side rendering in your application is very much dependent on the nature of your application and the kind of experience you need to deliver to your users. Because at the end of the day, they (most likely) do not care what stack you use. They only want to be smiling throughout the experience they get on your website.
 
