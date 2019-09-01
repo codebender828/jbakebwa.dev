@@ -19,9 +19,7 @@
           <h2>
             {{ formatDate(post.createdAt) }} -
             <saber-link :to="post.permalink">
-              {{
-                post.title
-              }}
+              {{ post.title }}
             </saber-link>
           </h2>
         </li>
@@ -67,14 +65,6 @@ export default {
     formatDate(v) {
       const date = new Date(v)
       return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
-    }
-  },
-  transition (to, from) {
-    const toDepth = to.path.split('/').length
-    const fromDepth = from.path.split('/').length
-    const transition = toDepth < fromDepth ? 'slide-right' : 'slide-left'
-    return {
-      name: transition
     }
   }
 }

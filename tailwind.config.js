@@ -5,7 +5,8 @@ module.exports = {
       maroon: '#912F56',
       light: '#EAF2EF',
       dirt: '#5A474E',
-      dark: '#0D090A'
+      dark: '#0D090A',
+      'dark-100': '#1B1B1B'
     },
     extend: {
       fontFamily: {

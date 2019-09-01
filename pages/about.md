@@ -1,16 +1,17 @@
-<Navbar />
-
 ## About me
 
 I'm a cool guy from the Mars, nice to meet you folks.
 
 <script>
-import Navbar from '@/components/Navbar.vue'
-
 export default {
   layout: 'page',
-  components: {
-    Navbar
+  transition (to, from) {
+    const toDepth = to.path.split('/').length
+    const fromDepth = from.path.split('/').length
+    const transition = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+    return {
+      name: transition
+    }
   }
 }
 </script>
