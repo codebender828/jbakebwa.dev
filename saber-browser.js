@@ -8,5 +8,5 @@ import { installPluginVueSimpleScrollbar } from '@/plugins/scrollbar'
 
 export default context => {
   installPluginFontAwesome(context.Vue)
-  installPluginVueSimpleScrollbar(context.Vue)
+  // installPluginVueSimpleScrollbar(context.Vue)
 }
