@@ -8,6 +8,9 @@ module.exports = {
     },
     {
       resolve: 'saber-plugin-query-posts'
+    },
+    {
+      resolve: 'saber-plugin-search'
     }
   ]
 }

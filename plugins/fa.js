@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // Light Icons
 import {
   faArrowRight,
-  faSearch
+  faSearch,
+  faEnvelope
 } from '@fortawesome/pro-light-svg-icons'
 
 // Duotone Icons
@@ -27,7 +28,8 @@ library.add(
   faTwitter,
   faGithub,
   faSearch,
-  faVuejs
+  faVuejs,
+  faEnvelope
 )
 
 /**

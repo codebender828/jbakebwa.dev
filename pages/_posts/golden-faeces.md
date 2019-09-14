@@ -1,5 +1,5 @@
 ---
-title: Building Faecal matter with Vue.js
+title: Golden Faeces
 date: 2019-07-08
 layout: page
 ---

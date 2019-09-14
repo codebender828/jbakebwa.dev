@@ -1,12 +1,13 @@
 <template>
   <div class="page-wrapper">
     <navbar />
-    <slot name="default" />
+    <slot />
   </div>
 </template>
 
 <script>
-  import Navbar from '@/components/Navbar.vue'
+  import Navbar from '@/components/navbar.vue'
+
   export const attributes = {
     injectAllPosts: true,
   }

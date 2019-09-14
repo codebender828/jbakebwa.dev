@@ -1,11 +1,11 @@
 <template>
   <div class="page-wrapper">
-    <Navbar />
+    <navbar />
     <h2 class="page-title">
       {{ page.title }}
     </h2>
     <div class="page-content">
-      <slot name="default" />
+      <slot />
     </div>
     <div
       v-if="page.posts"
@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
+import Navbar from '@/components/navbar.vue'
 
 export default {
   components: {
@@ -87,8 +87,12 @@ code,pre {
   }
 }
 
+html,
+body {
+  margin: 0;
+}
+
 .page-wrapper {
-  width: 100vw;
   position: relative;
   padding-top: 60px;
 }

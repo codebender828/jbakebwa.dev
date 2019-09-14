@@ -72,5 +72,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.post {
+  background: var(--white);
 
+  .excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .meta {
+    .link {
+      box-shadow: 0 0px 9px 3px rgba(223, 0, 88, 0.25);
+
+      &:hover {
+        box-shadow: 0 0px 9px 3px rgba(223, 0, 88, 0.35);
+      }
+    }
+  }
+}
 </style>
