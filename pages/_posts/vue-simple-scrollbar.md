@@ -1,15 +1,16 @@
 ---
 title: 🦉 Vue Simple Scrollbar
 date: 2019-08-14
-layout: page
+layout: blog
 tags:
   - ssr
   - csr
 ---
 
-A simple friendly lightweight scrollbar to make take your scrollbar game to the next level.
+# 🦉 Vue Simple Scrollbar
 
-This awesome package was ported from the awesome [simple-scrollbar](https://github.com/buzinas/simple-scrollbar)
+A simple friendly lightweight scrollbar to make take your scrollbar game to the next level.
+This awesome package was ported from the awesome [simple-scrollbar](https://github.com/buzinas/simple-scrollbar).
 
 ## How it works?
 
@@ -28,13 +29,13 @@ Don't worry! Will make it more elegant later!
 
 With Yarn:
 
-```
+```bash
 yarn add vue-simple-scrollbar
 ```
 
 Or if you're an NPM hipster:
 
-```
+```bash
 npm install vue-simple-scrollbar --save
 ```
 
@@ -46,7 +47,7 @@ You can import the `vue-simple-scrollbar` in your single file component as shown
 
 In your template file
 
-```html
+```vue
 <template>
   <div class="box">
     <vue-simple-scrollbar>

@@ -10,7 +10,8 @@ import {
 
 // Duotone Icons
 import {
-  faCalendarDay
+  faCalendarDay,
+  faCoffeeTogo
 }
 from '@fortawesome/pro-duotone-svg-icons'
 
@@ -29,7 +30,8 @@ library.add(
   faGithub,
   faSearch,
   faVuejs,
-  faEnvelope
+  faEnvelope,
+  faCoffeeTogo
 )
 
 /**

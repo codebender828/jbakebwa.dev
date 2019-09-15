@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Source Sans Pro'],
+        sans: ['Rubik'],
         mono: ['Fira Code']
       },
       lineHeight: {

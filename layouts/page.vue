@@ -74,6 +74,7 @@ export default {
 @import "@/scss/tailwind.scss";
 @import "@/scss/variables.scss";
 @import "@/scss/fonts.scss";
+@import "@/scss/global.scss";
 
 code,pre {
   font-family: var(--fira-code);
