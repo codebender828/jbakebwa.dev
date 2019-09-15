@@ -2,9 +2,6 @@
 title: 🦉 Vue Simple Scrollbar
 date: 2019-08-14
 layout: blog
-tags:
-  - ssr
-  - csr
 ---
 
 # 🦉 Vue Simple Scrollbar

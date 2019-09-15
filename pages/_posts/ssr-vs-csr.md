@@ -3,6 +3,9 @@ title: Do You Need Server-Side Rendering?
 date: 2019-07-08
 layout: blog
 cover: https://paper-attachments.dropbox.com/s_62216ECB7F75BCDC94FCA47872BD745FA8CC5487F65875CD57C1C53EB14B18E0_1562592073444_greece.jpeg
+tags:
+  - ssr
+  - csr
 ---
 
 # Do You Need Server-Side Rendering?
