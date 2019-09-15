@@ -1,7 +1,7 @@
 <template>
   <main class="page-wrapper">
     <navbar />
-    <div class="content px-4 sm:px-20">
+    <div class="content page-body px-4 sm:px-20">
       <section
         v-if="page.cover"
         class="hero-img-wrapper overflow-hidden rounded-lg hover:shadow-lg transition"
@@ -58,7 +58,8 @@ export default {
       type: Object,
       default: () => ({})
     }
-  }
+  },
+  transition: 'page'
 }
 </script>
 
@@ -129,6 +130,14 @@ img {
 .hero-img-wrapper {
   height: 40vh;
 }
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
 
 .post-link {
   @apply text-dark no-underline;

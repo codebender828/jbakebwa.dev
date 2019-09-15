@@ -1,6 +1,6 @@
 module.exports = {
   siteConfig: {
-    title: 'JBakebwa'
+    title: 'Jonathan Bakebwa'
   },
   plugins: [
     {

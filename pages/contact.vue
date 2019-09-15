@@ -1,5 +1,5 @@
 <template>
-  <main class="contact h-full w-full bg-light p-24">
+  <main class="page-body contact h-full w-full bg-light p-24">
     <h1 class="font-bold text-5xl">
       📝 Contact
     </h1>

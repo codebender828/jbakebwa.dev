@@ -37,7 +37,8 @@ export default {
       const date = new Date(v)
       return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
     }
-  }
+  },
+  transition: 'page'
 }
 </script>
 
@@ -92,39 +93,6 @@ body {
   text-decoration: none;
 }
 
-.slide-right-move,
-.slide-right-enter-active,
-.slide-right-leave-active {
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-}
-
-.slide-right-enter {
-  opacity: 0;
-  transform: translate(-30px, 0);
-}
-
-.slide-right-leave-active {
-  position: absolute;
-  opacity: 0;
-  transform: translate(30px, 0);
-}
-
-.slide-left-move,
-.slide-left-enter-active,
-.slide-left-leave-active {
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-}
-
-.slide-left-enter {
-  opacity: 0;
-  transform: translate(30px, 0);
-}
-
-.slide-left-leave-active {
-  position: absolute;
-  opacity: 0;
-  transform: translate(-30px, 0);
-}
 .page-enter-active, .page-leave-active {
   transition: opacity .5s;
 }

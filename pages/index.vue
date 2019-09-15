@@ -1,5 +1,5 @@
 <template>
-  <div class="home-container flex flex-col-reverse sm:flex-row h-full">
+  <div class="page-body home-container flex flex-col-reverse sm:flex-row h-full">
     <div class="w-full sm:w-2/3 flex flex-col items-start p-10 bg-light h-full">
       <div class="w-full title-block flex flex-col sm:flex-row mb-3 sm:justify-center sm:items-center">
         <h1 class="font-bold text-5xl mr-auto">

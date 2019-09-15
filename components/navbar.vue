@@ -96,20 +96,4 @@
   }
 }
 
-.slide-fade-move,
-.slide-fade-enter-active,
-.slide-fade-leave-active {
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-}
-
-.slide-fade-enter {
-  opacity: 0;
-  transform: translate(0, -30px);
-}
-
-.slide-fade-leave-active {
-  position: absolute;
-  opacity: 0;
-  transform: translate(0, -30px);
-}
 </style>
