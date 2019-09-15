@@ -20,13 +20,13 @@
     "prismjs": "^1.17.1",
     "saber": "^0.7.0",
     "saber-highlight-css": "^0.1.0",
+    "saber-plugin-netlify-redirect": "^0.1.1",
     "saber-plugin-prismjs": "^0.2.1",
     "saber-plugin-query-posts": "^0.4.1",
     "saber-plugin-search": "^0.1.0",
     "sass-loader": "^7.2.0",
     "tailwindcss": "^1.1.2",
-    "url-loader": "^2.1.0",
-    "vue-simple-scrollbar": "^0.1.8"
+    "url-loader": "^2.1.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",

@@ -3859,13 +3859,6 @@ javascript-stringify@^2.0.0:
   resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-2.0.0.tgz#ef750216ae66504ffd670b68c8b8aa07bdf7b588"
   integrity sha512-zzK8+ByrzvOL6N92hRewwUKL0wN0TOaIuUjX0Jj8lraxWvr5wHYs2YTjaj2lstF+8qMv5cmPPef47va8NT8lDw==
 
-jest-coverage-badges@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/jest-coverage-badges/-/jest-coverage-badges-1.1.2.tgz#a70786b139fd8fb685db732e1e2d916d8a47287e"
-  integrity sha512-44A7i2xR6os8+fWk8ZRM6W4fKiD2jwKOLU9eB3iTIIWACd9RbdvmiCNpQZTOsUBhKvz7aQ/ASFhu5JOEhWUOlg==
-  dependencies:
-    mkdirp "0.5.1"
-
 joycon@^2.2.4:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/joycon/-/joycon-2.2.5.tgz#8d4cf4cbb2544d7b7583c216fcdfec19f6be1615"
@@ -4377,7 +4370,7 @@ mixin-object@^2.0.1:
     for-in "^0.1.3"
     is-extendable "^0.1.1"
 
-mkdirp@0.5.1, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
+"mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
@@ -4646,11 +4639,6 @@ npm-packlist@^1.1.6:
     console-control-strings "~1.1.0"
     gauge "~2.7.3"
     set-blocking "~2.0.0"
-
-nprogress@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
-  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
 nth-check@^1.0.2:
   version "1.0.2"
@@ -5928,6 +5916,13 @@ saber-markdown@^0.1.0:
   resolved "https://registry.yarnpkg.com/saber-markdown/-/saber-markdown-0.1.0.tgz#97daf5e7d48f67e7cb60f3f7335c16082474b18b"
   integrity sha512-qI02wHTH4LUXiX6guP5o5E2u08OQUjxNHBETAK5J4PxRvudQPgUzGcaEbGeg1WEI+WbpvOBLd/rZviZWCXNEDA==
 
+saber-plugin-netlify-redirect@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/saber-plugin-netlify-redirect/-/saber-plugin-netlify-redirect-0.1.1.tgz#978662bdfbcbf62082c5570354bb5d58a3cc8792"
+  integrity sha512-XRPvCMnbMhBFi2SV6EbZDVviohYbTMAAEwv4ADkOE0OzyjXGCM/jwLiflGTdxdXt1BUBZdiJlapD4l18nVKRhA==
+  dependencies:
+    url-join "^4.0.0"
+
 saber-plugin-prismjs@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/saber-plugin-prismjs/-/saber-plugin-prismjs-0.2.1.tgz#678cbe3611d331a89429270a9639287941c0a1cf"
@@ -6205,11 +6200,6 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
-
-simple-scrollbar@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/simple-scrollbar/-/simple-scrollbar-0.4.0.tgz#cd0b7a4f8dcf7c0bb8d4c83b0ac5b0acebf2579b"
-  integrity sha512-mK4cZtoa7UdmwxxMT44kXF3SdNs+Ml/IiFTML0wDJpDi3zVRevlkiJcrZJ7vVyTKUw6OmDyijdNJecHpnd5y3w==
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
@@ -7092,11 +7082,6 @@ vue-router@^3.0.6:
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.7.tgz#b36ca107b4acb8ff5bc4ff824584059c23fcb87b"
   integrity sha512-utJ+QR3YlIC/6x6xq17UMXeAfxEvXA0VKD3PiSio7hBOZNusA1jXcbxZxVEfJunLp48oonjTepY8ORoIlRx/EQ==
 
-vue-router@^3.1.2:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.1.3.tgz#e6b14fabc0c0ee9fda0e2cbbda74b350e28e412b"
-  integrity sha512-8iSa4mGNXBjyuSZFCCO4fiKfvzqk+mhL0lnKuGcQtO1eoj8nq3CmbEG8FwK5QqoqwDgsjsf1GDuisDX4cdb/aQ==
-
 vue-server-renderer@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue-server-renderer/-/vue-server-renderer-2.6.10.tgz#cb2558842ead360ae2ec1f3719b75564a805b375"
@@ -7110,19 +7095,6 @@ vue-server-renderer@^2.6.10:
     resolve "^1.2.0"
     serialize-javascript "^1.3.0"
     source-map "0.5.6"
-
-vue-simple-scrollbar@^0.1.1, vue-simple-scrollbar@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/vue-simple-scrollbar/-/vue-simple-scrollbar-0.1.8.tgz#677005632a8cbe218afa447bd99629dd20b877c7"
-  integrity sha512-W2Zzyix435q5kuDGmxcotTE7ovYzLu/WMRSo7fY0XGlu7ak2B4lwY+C+hDv+TWP83UHyu9x1E3szvjp/7qVN5Q==
-  dependencies:
-    core-js "^2.6.5"
-    jest-coverage-badges "^1.1.2"
-    nprogress "^0.2.0"
-    simple-scrollbar "^0.4.0"
-    vue "^2.6.10"
-    vue-router "^3.1.2"
-    vue-simple-scrollbar "^0.1.1"
 
 vue-style-loader@^4.1.0:
   version "4.1.2"

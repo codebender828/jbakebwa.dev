@@ -11,6 +11,9 @@ module.exports = {
     },
     {
       resolve: 'saber-plugin-search'
+    },
+    {
+      resolve: 'saber-plugin-netlify-redirect'
     }
   ]
 }
