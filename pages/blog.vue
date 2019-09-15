@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-start md:p-12 p-8 bg-light h-auto">
+  <div class="blogs-container flex flex-col items-start md:p-12 p-8 bg-light h-auto">
     <div class="w-full title-block flex mb-3 justify-center items-center">
       <h1 class="font-bold text-5xl mr-auto">
         Blogs
@@ -48,13 +48,18 @@
 import Search from '@/components/search.vue'
 
 export const attributes = {
-  layout: 'home',
+  layout: 'page',
   injectAllPosts: true,
 }
 
 export default {
   components: {
     Search
+  },
+  head() {
+    return {
+      title: 'Blogs | Jonathan Bakebwa'
+    }
   },
   props: {
     page: {
@@ -72,6 +77,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.blogs-container {
+  width: 100vw;
+}
+
 .post {
   background: var(--white);
 

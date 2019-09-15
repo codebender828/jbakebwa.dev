@@ -1,51 +1,22 @@
 <template>
   <div class="page-wrapper">
     <navbar />
-    <h2 class="page-title">
-      {{ page.title }}
-    </h2>
-    <div class="page-content">
-      <slot />
-    </div>
-    <div
-      v-if="page.posts"
-      class="recent-posts"
-    >
-      <ul>
-        <li
-          v-for="post in page.posts"
-          :key="post.permalink"
-        >
-          <h2>
-            {{ formatDate(post.createdAt) }} -
-            <saber-link :to="post.permalink">
-              {{ post.title }}
-            </saber-link>
-          </h2>
-        </li>
-      </ul>
-    </div>
-    <ul>
-      <li v-if="page.prevPost">
-        <router-link :to="page.prevPost.permalink">
-          Previous: {{ page.prevPost.title }}
-        </router-link>
-      </li>
-      <li v-if="page.nextPost">
-        <router-link :to="page.nextPost.permalink">
-          Next: {{ page.nextPost.title }}
-        </router-link>
-      </li>
-    </ul>
+    <slot
+      class="content"
+      name="default"
+    />
+    <base-footer class="footer" />
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/navbar.vue'
+import BaseFooter from '@/components/base-footer.vue'
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    BaseFooter
   },
   props: {
     page: {
@@ -96,6 +67,18 @@ body {
 .page-wrapper {
   position: relative;
   padding-top: 60px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  .content {
+    grid-row: 1/2;
+    @apply px-8;
+  }
+
+  .footer {
+    grid-row: 2/3;
+  }
 }
 
 .recent-posts ul {
