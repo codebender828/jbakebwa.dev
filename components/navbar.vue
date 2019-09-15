@@ -80,7 +80,6 @@
   transition: all 0.2s ease-in-out;
   background: linear-gradient(45deg, var(--red), var(--maroon));
   font-family: var(--source-sans);
-  height: 60px;
 }
 
 @media (max-width: 768px) {

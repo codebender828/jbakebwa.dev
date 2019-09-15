@@ -72,8 +72,8 @@ body {
   grid-template-rows: 1fr auto;
 
   .content {
+    width: inherit;
     grid-row: 1/2;
-    @apply px-8;
   }
 
   .footer {

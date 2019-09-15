@@ -1,7 +1,7 @@
 <template>
-  <div class="flex h-full">
-    <div class="w-2/3 flex flex-col items-start p-10 bg-light h-full">
-      <div class="w-full title-block flex mb-3 justify-center items-center">
+  <div class="home-container flex flex-col-reverse sm:flex-row h-full">
+    <div class="w-full sm:w-2/3 flex flex-col items-start p-10 bg-light h-full">
+      <div class="w-full title-block flex flex-col sm:flex-row mb-3 sm:justify-center sm:items-center">
         <h1 class="font-bold text-5xl mr-auto">
           Blog
         </h1>
@@ -51,7 +51,7 @@
         </ul>
       </div>
     </div>
-    <div class="profile w-1/3 bg-no-repeat bg-cover bg-center text-light h-full">
+    <div class="profile w-full sm:w-1/3 bg-no-repeat bg-cover bg-center text-light h-full">
       <div class="flex h-full p-10 flex-col items-center justify-center">
         <div class="rounded-full overflow-hidden h-48 w-48">
           <img
@@ -175,5 +175,9 @@ export default {
 }
 .transition {
   transition: all 0.2s ease-in-out
+}
+
+.home-container {
+  width: 100vw;
 }
 </style>
