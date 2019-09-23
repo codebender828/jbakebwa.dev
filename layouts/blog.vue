@@ -64,6 +64,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~prismjs/themes/prism.css';
+@import '~saber-highlight-css/default.css';
 
 h1,
 h2,
