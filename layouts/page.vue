@@ -53,11 +53,15 @@ code,pre {
 }
 
 .saber-highlight {
-
   code[class*="language-"],
   pre[class*="language-"] {
     font-family: var(--fira-code);
   }
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: none;
 }
 
 html,
