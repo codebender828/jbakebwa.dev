@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "saber",
-    "build": "saber build"
+    "build": "saber build",
+    "start": "saber build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
