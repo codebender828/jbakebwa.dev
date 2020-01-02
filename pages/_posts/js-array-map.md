@@ -21,12 +21,12 @@ Javascript's `Array` prototype provides us with a few methods one of which is th
 ![Mapper Function Illustration](https://res.cloudinary.com/xtellar/image/upload/v1577979121/jbakebwa.dev/illustrations/mapper-illustration_ocnina.jpg)
 *Fig.1 - Illustration of mapping in set theory*
 
-In the above illustration, Set A is our domain and Set B is our range. By comparing the values in both sets, we can determine that the values in our range are _double the corresponding range value_. Therefore, **Set B is produced by mapping over each of the values Set A with the function `y = 2x`.**
+In the above illustration, Set A is our domain and Set B is our range. By comparing the values in both sets, we can determine that the values in our range are _double value the corresponding domain entry_. Therefore, **Set B is produced by mapping over each of the values Set A with the function `y = 2x`.**
 
 You can read more about mapping [here](https://www.encyclopediaofmath.org/index.php/Mapping).
 
 ## `Array.map()`
-The `Array.map()` method creates a **new array** with the returned value from our mapper function for each of our array entries. This means that _for each entry, the `.map()` method will be called once sequentially.
+The `Array.map()` method creates a **new array** with the returned value from our mapper function for each of our array entries. This means that _for each entry, the `.map()` method will be called once sequentially_.
 
 Now that we know what mapping is, let's see how we can use this in our apps. In Javascript, an array is simply a set of values. Similar to our [concept illustration](#%f0%9f%8e%b2-the-concept-of-mapping), let's use `Array.map` to create a new array of doubled values.
 
