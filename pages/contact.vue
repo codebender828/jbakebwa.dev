@@ -41,16 +41,14 @@
 export const attributes = {
   layout: 'home'
 }
-  export default {
-    name: 'Contact',
-    head() {
-      return {
-        title: '📬 Contact | Jonathan Bakebwa'
-      }
+
+export default {
+  name: 'Contact',
+  head() {
+    return {
+      title: '📬 Contact | Jonathan Bakebwa'
     }
-  }
+  },
+  transition: 'page',
+}
 </script>
-
-<style lang="scss" scoped>
-
-</style>

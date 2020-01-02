@@ -86,10 +86,10 @@
             </a>
           </div>
           <p class="mt-4">
-            I'm a Ugandan 🇺🇬 front end engineer in China who loves creating great experiences for the web while sharing the things I learn along the way.
+            I'm a Ugandan 🇺🇬 UI engineer in China who loves creating great web experiences for the web. This is where I'll share my learnings!
           </p>
           <p class="mt-4">
-            Among other things, I like working with Vue.js!
+            Among other things, I like working with Javascript and Vue.js!
           </p>
           <vue-fontawesome-icon
             class="transition hover:text-vue mt-4"
@@ -117,6 +117,7 @@ export default {
   name: 'HomePage',
   injectAllPosts: true,
   layout: 'home',
+  transition: 'page',
   components: {
     Search,
     Tag

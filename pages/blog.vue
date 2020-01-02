@@ -56,6 +56,7 @@ export default {
   components: {
     Search
   },
+  transition: 'page',
   head() {
     return {
       title: 'Blogs | Jonathan Bakebwa'

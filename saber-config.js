@@ -15,5 +15,13 @@ module.exports = {
     {
       resolve: 'saber-plugin-netlify-redirect'
     }
-  ]
+  ],
+  markdown: {
+    headings: {
+      markdownHeadings: true,
+      permalink: true,
+      permalinkBefore: true,
+      permalinkSymbol: '🔗'
+    }
+  }
 }

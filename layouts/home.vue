@@ -1,7 +1,9 @@
 <template>
   <div class="page-wrapper">
     <navbar />
-    <slot />
+    <slot
+      class="content"
+    />
   </div>
 </template>
 
@@ -20,8 +22,7 @@
         type: Object,
         default: () => ({})
       }
-    },
-    transition: 'page'
+    }
   }
 </script>
 
@@ -32,10 +33,14 @@
 }
 
 .page-enter-active, .page-leave-active {
-  transition: opacity .5s;
+  .content {
+    transition: opacity 0.1s;
+  }
 }
 .page-enter, .page-leave-to {
-  opacity: 0;
+  .content {
+    opacity: 0;
+  }
 }
 
 

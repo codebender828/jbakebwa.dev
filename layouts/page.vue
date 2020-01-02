@@ -37,8 +37,7 @@ export default {
       const date = new Date(v)
       return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
     }
-  },
-  transition: 'page'
+  }
 }
 </script>
 
@@ -98,10 +97,14 @@ body {
 }
 
 .page-enter-active, .page-leave-active {
-  transition: opacity .5s;
+  .content {
+    transition: opacity 0.1s;
+  }
 }
 .page-enter, .page-leave-to {
-  opacity: 0;
+  .content {
+    opacity: 0;
+  }
 }
 
 </style>

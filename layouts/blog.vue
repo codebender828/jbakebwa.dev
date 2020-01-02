@@ -1,7 +1,7 @@
 <template>
   <main class="page-wrapper">
     <navbar />
-    <div class="content page-body px-4 sm:px-20">
+    <div class="content page-body px-8 sm:px-20 md:px-56">
       <section
         v-if="page.cover"
         class="hero-img-wrapper overflow-hidden rounded-lg hover:shadow-lg transition"
@@ -58,8 +58,7 @@ export default {
       type: Object,
       default: () => ({})
     }
-  },
-  transition: 'page'
+  }
 }
 </script>
 
@@ -77,7 +76,7 @@ h6 {
 }
 
 h1 {
-  @apply text-4xl mt-8 mb-5;
+  @apply text-4xl mt-16 mb-8;
   line-height: 1.2em;
 }
 
@@ -123,23 +122,36 @@ img {
 
 .page-wrapper {
   padding-top: 60px;
-
-  .content {
-    width: 100vw;
-  }
 }
 
 .hero-img-wrapper {
   height: 40vh;
 }
 
-.page-enter-active, .page-leave-active {
-  transition: opacity .5s;
-}
-.page-enter, .page-leave-to {
-  opacity: 0;
+@media (min-width: 1190px) {
+  .content {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
 }
 
+@media (min-width: 1190px) {
+  .content {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+}
+
+.page-enter-active, .page-leave-active {
+  .content {
+    transition: opacity 0.1s;
+  }
+}
+.page-enter, .page-leave-to {
+  .content {
+    opacity: 0;
+  }
+}
 
 .post-link {
   @apply text-dark no-underline;
