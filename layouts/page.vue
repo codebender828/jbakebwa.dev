@@ -49,6 +49,10 @@ export default {
 
 code,pre {
   font-family: var(--fira-code);
+  padding: 0.2rem 0.4rem;
+  background: #efefef;
+  border-radius: 5px;
+
 }
 
 .saber-highlight {
