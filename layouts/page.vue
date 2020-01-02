@@ -78,6 +78,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
+  width: 100vw;
 
   .content {
     width: inherit;

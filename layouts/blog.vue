@@ -1,7 +1,7 @@
 <template>
   <main class="page-wrapper">
     <navbar />
-    <div class="content page-body px-8 sm:px-20 md:px-56">
+    <div class="content page-body pt-5 sm:pt-12 px-8 sm:px-20 md:px-56">
       <section
         v-if="page.cover"
         class="hero-img-wrapper overflow-hidden rounded-lg hover:shadow-lg transition"
@@ -122,6 +122,7 @@ img {
 
 .page-wrapper {
   padding-top: 60px;
+  width: 100vw;
 }
 
 .hero-img-wrapper {
