@@ -128,9 +128,6 @@ export default {
       default: () => ({})
     }
   },
-  mounted() {
-    this.$ma.trackView({screenName: 'Home Page'})
-  },
   methods: {
     formatDate(v) {
       const date = new Date(v)

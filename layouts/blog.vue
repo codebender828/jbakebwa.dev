@@ -48,15 +48,15 @@ export default {
     Navbar,
     BaseFooter
   },
-  head() {
-    return {
-      title: `${this.page.title} | Jonathan Bakebwa Blog`
-    }
-  },
   props: {
     page: {
       type: Object,
       default: () => ({})
+    }
+  },
+  head() {
+    return {
+      title: `${this.page.title} | Jonathan Bakebwa Blog`
     }
   }
 }

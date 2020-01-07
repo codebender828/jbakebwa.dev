@@ -7,6 +7,7 @@ tags:
   - ssr
   - csr
 excerpt: The advantages and disadvantages of both techniques and some possible pointers to help you make a decision for your application.
+name: Do You Need Server-Side Rendering?
 ---
 
 # Do You Need Server-Side Rendering?

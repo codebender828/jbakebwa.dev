@@ -57,11 +57,6 @@ export default {
     Search
   },
   transition: 'page',
-  head() {
-    return {
-      title: 'Blogs | Jonathan Bakebwa'
-    }
-  },
   props: {
     page: {
       type: Object,
@@ -72,6 +67,11 @@ export default {
     formatDate(v) {
       const date = new Date(v)
       return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
+    }
+  },
+  head() {
+    return {
+      title: 'Blogs | Jonathan Bakebwa'
     }
   }
 }

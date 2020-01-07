@@ -6,8 +6,6 @@ dotenv.config({
   defaults: './config/env/.env.defaults'
 })
 
-console.log({ MIXPANEL: process.env.MIXPANEL_TOKEN })
-
 module.exports = {
   siteConfig: {
     title: 'Jonathan Bakebwa',
