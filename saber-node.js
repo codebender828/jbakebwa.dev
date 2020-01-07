@@ -1,3 +1,5 @@
+const Dotenv = require('dotenv-webpack');
+
 exports.onCreatePages = function() {
   // Pages are read into the `this.pages` Map
   // Sort posts by createdAt (date) from new to old
@@ -14,4 +16,15 @@ exports.onCreatePages = function() {
     post.prevPost = selectFields(posts[index - 1])
     post.nextPost = selectFields(posts[index + 1])
   }
+}
+
+exports.getWebpackConfig = function(config, { type }) {
+  config.plugins.push(new Dotenv({
+    path: './config/env/.env',
+    safe: true,
+    systemvars: true,
+    silent: true,
+    defaults: false
+  }))
+  return config
 }

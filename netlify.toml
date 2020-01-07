@@ -1,0 +1,2 @@
+[context.production.environment]
+  MIXPANEL_TOKEN = "617847d2fdd73a9c8bbf5fd1cdca8f46"

@@ -128,15 +128,18 @@ export default {
       default: () => ({})
     }
   },
-  head() {
-    return {
-      title: 'Jonathan Bakebwa'
-    }
+  mounted() {
+    this.$ma.trackView({screenName: 'Home Page'})
   },
   methods: {
     formatDate(v) {
       const date = new Date(v)
       return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
+    }
+  },
+  head() {
+    return {
+      title: 'Jonathan Bakebwa'
     }
   }
 }

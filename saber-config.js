@@ -1,3 +1,13 @@
+const dotenv = require('dotenv-defaults')
+
+// Configuring dotenv variables.
+dotenv.config({
+  path: './config/env/.env',
+  defaults: './config/env/.env.defaults'
+})
+
+console.log({ MIXPANEL: process.env.MIXPANEL_TOKEN })
+
 module.exports = {
   siteConfig: {
     title: 'Jonathan Bakebwa',
