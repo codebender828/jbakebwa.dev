@@ -7564,11 +7564,6 @@ vue-meta@^2.0.4:
   dependencies:
     deepmerge "^4.0.0"
 
-vue-multianalytics@^1.11.7:
-  version "1.11.7"
-  resolved "https://registry.yarnpkg.com/vue-multianalytics/-/vue-multianalytics-1.11.7.tgz#e3d10c6952935610317729990f5f604774c86796"
-  integrity sha512-VSVFSlCwbDTloodDainKUjKArebgwpPN77I8Bi6FhYq9fvBQYX5Qkur4zuLUbB8M3EkJLjyWTz4jztrarZ6pMQ==
-
 vue-router-prefetch@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-router-prefetch/-/vue-router-prefetch-1.6.0.tgz#ef34228d6e122b4f6959da52c8dd448fe2a0057d"
