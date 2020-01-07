@@ -7,7 +7,6 @@ cover: https://res.cloudinary.com/xtellar/image/upload/c_scale,w_1200/v157797793
 tags:
   - array
   - javascript
-title: 🏘 Array.map() in Javascript
 ---
 
 # 🏘 `Array.map()` in Javascript
