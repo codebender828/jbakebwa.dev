@@ -1,5 +1,3 @@
-import VueMultianalytics from 'vue-multianalytics/dist/vue-multianalytics'
-
 const MIXPANEL_TOKEN = process.env.MIXPANEL_TOKEN
 
 let mixpanelConfig = {
