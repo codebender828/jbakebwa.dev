@@ -57,7 +57,7 @@ export default {
     }
   },
   head() {
-    const twitterImage = generateShareCard({
+    const shareImage = generateShareCard({
       title: `${this.page.title}`,
       tagline: this.page.tags.map(tag => `#${tag}`).join('  '),
       cloudName: 'xtellar',
@@ -72,8 +72,45 @@ export default {
       title: `${this.page.title} | Jonathan Bakebwa Blog`,
       meta: [
         {
+          name: 'image',
+          content: shareImage
+        },
+        {
+          name: 'description',
+          content: this.page.excerpt
+        },
+        // OpenGraph tags
+        {
+          name: 'og:url',
+          content: `https://jbakebwa.dev/${this.page.permalink}`
+        },
+        {
+          name: 'og:type',
+          content: 'article'
+        },
+        {
+          name: 'og:description',
+          content: this.page.excerpt
+        },
+        {
+          name: 'og:image',
+          content: shareImage
+        },
+        {
+          name: 'twitter:title',
+          content: 'Jonathan Bakebwa Blog'
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          name: 'twitter:creator',
+          content: '@codebender828'
+        },
+        {
           name: 'twitter:image',
-          content: twitterImage
+          content: shareImage
         }
       ]
     }

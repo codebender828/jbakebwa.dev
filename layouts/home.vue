@@ -28,8 +28,8 @@
       title: 'Jonathan Bakebwa Blog',
       meta: [
         {
-          name: 'twitter:image',
-          content: twitterImage
+          name: 'description',
+          content: 'Learning with Jonathan Bakebwa - Official Blog'
         },
         {
           name: 'twitter:site',
@@ -38,6 +38,14 @@
         {
           name: 'twitter:title',
           content: 'Jonathan Bakebwa Blog'
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          name: 'twitter:creator',
+          content: '@codebender828'
         }
       ]
     }
