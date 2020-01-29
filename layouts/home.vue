@@ -22,6 +22,25 @@
         type: Object,
         default: () => ({})
       }
+    },
+    head() {
+      return {
+      title: 'Jonathan Bakebwa Blog',
+      meta: [
+        {
+          name: 'twitter:image',
+          content: twitterImage
+        },
+        {
+          name: 'twitter:site',
+          content: '@codebender828'
+        },
+        {
+          name: 'twitter:title',
+          content: 'Jonathan Bakebwa Blog'
+        }
+      ]
+    }
     }
   }
 </script>
