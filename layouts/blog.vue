@@ -107,10 +107,6 @@ export default {
         {
           name: 'twitter:creator',
           content: '@codebender828'
-        },
-        {
-          name: 'twitter:image',
-          content: shareImage
         }
       ]
     }
