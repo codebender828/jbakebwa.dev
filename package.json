@@ -16,6 +16,7 @@
     "@fortawesome/pro-duotone-svg-icons": "^5.10.2",
     "@fortawesome/pro-light-svg-icons": "^5.10.2",
     "@fortawesome/vue-fontawesome": "^0.1.7",
+    "@jlengstorf/get-share-image": "^0.5.0",
     "consola": "^2.10.1",
     "dotenv-defaults": "^1.0.3",
     "dotenv-webpack": "^1.7.0",

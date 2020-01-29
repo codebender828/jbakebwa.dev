@@ -1,5 +1,5 @@
 ---
-title: 🏘 Array.map() in Javascript
+title: Array.map() in Javascript
 date: 2020-01-02
 layout: blog
 excerpt: Here's how Javascript's Array.map operator works

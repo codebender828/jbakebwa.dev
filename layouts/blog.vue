@@ -42,6 +42,8 @@
 <script>
 import Navbar from '@/components/navbar.vue'
 import BaseFooter from '@/components/base-footer.vue'
+import generateShareCard from '@jlengstorf/get-share-image'
+// import generateShareCard from '@/helpers/share'
 
 export default {
   components: {
@@ -55,8 +57,25 @@ export default {
     }
   },
   head() {
+    const twitterImage = generateShareCard({
+      title: `${this.page.title}`,
+      tagline: this.page.tags.map(tag => `#${tag}`).join('  '),
+      cloudName: 'xtellar',
+      textColor: 'BB1B5A',
+      titleFont: 'Rubik',
+      titleExtraConfig: '_bold',
+      taglineFont: 'Rubik',
+      textLeftOffset: 400,
+      imagePublicID: 'jbakebwa.dev/twitter-cards/stellar-twitter-card',
+    });
     return {
-      title: `${this.page.title} | Jonathan Bakebwa Blog`
+      title: `${this.page.title} | Jonathan Bakebwa Blog`,
+      meta: [
+        {
+          name: 'twitter:image',
+          content: twitterImage
+        }
+      ]
     }
   }
 }

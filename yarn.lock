@@ -788,6 +788,11 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
+"@jlengstorf/get-share-image@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@jlengstorf/get-share-image/-/get-share-image-0.5.0.tgz#0dbd6660a7b8bdba9af6b8961fb81c9b54793e1d"
+  integrity sha512-OWVBj5vGYUh7g+AziDhucSjNZ4XNOUNGB/pd0PlwYVkaykJnxnB+Djp2EzOVtDQwcxE5v9p1lCiAyBeCfzir7w==
+
 "@polka/url@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-0.5.0.tgz#b21510597fd601e5d7c95008b76bf0d254ebfd31"
