@@ -11,7 +11,8 @@ cover: https://res.cloudinary.com/xtellar/image/upload/c_scale,q_52,w_1920/v1580
 ---
 
 # Leverage `provide/inject` to avoid prop drilling in Vue.js
-
+_Published on 2020-01-28_
+<br></br>
 ### Table of Contents
 - [Working with Props](#props)
 - [What is `provide` & `inject` ?](#provide-inject)

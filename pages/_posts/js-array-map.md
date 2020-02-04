@@ -10,6 +10,9 @@ tags:
 ---
 
 # 🏘 `Array.map()` in Javascript
+_Published on 2020-01-02_
+<br></br>
+
 If you're getting started with Javascript, or haven't worked a lot with arrays in Javascript, the `Array.map()` might be a new concept to you. By the end of this brief article, you will (at the very least) have an understanding of what the `.map()` operator does and how you can use it to perform god-level ⚡️ operations in your Javascript applications.
 
 > #### TLDR:

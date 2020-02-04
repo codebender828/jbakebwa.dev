@@ -11,6 +11,8 @@ name: Do You Need Server-Side Rendering?
 ---
 
 # Do You Need Server-Side Rendering?
+_Published on 2019-07-08_
+<br></br>
 
 Yes. No? Maybe?
 
