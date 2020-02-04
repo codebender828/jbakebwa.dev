@@ -76,6 +76,11 @@ export default {
           content: shareImage
         },
         {
+          name: 'image',
+          property: 'og:image',
+          content: shareImage
+        },
+        {
           name: 'description',
           content: this.page.excerpt
         },

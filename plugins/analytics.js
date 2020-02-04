@@ -16,7 +16,7 @@ export function installAnalytics({ router }) {
     mixpanel.init(MIXPANEL_TOKEN)
 
     router.afterEach(to => {
-      console.log({ to })
+      (process.env.NODE_ENV !== 'production') && console.log({ to })
       mixpanel.track('Page Viewed', { 'page': to.path })
     })
   }
