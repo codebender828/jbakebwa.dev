@@ -86,10 +86,13 @@
             </a>
           </div>
           <p class="mt-4">
-            I'm a Ugandan 🇺🇬 UI engineer in China who loves creating great web experiences for the web. This is where I'll share my learnings!
+            I'm a Ugandan 🇺🇬  UI engineer living in Beijing, China and I enjoy creating great web experiences. I'm also a co-founder of <a
+              style="color: white; text-decoration: underline;"
+              href="https://akkadu.com"
+            >Akkadu,</a> a startup enabling education without limits by providing live remote simultaneous interpretation.
           </p>
           <p class="mt-4">
-            Among other things, I like working with Javascript and Vue.js!
+            Among other things, I like working with Javascript and Vue.js and this is where I'll share my learnings!
           </p>
           <vue-fontawesome-icon
             class="transition hover:text-vue mt-4"

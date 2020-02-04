@@ -72,6 +72,10 @@ export default {
       title: `${this.page.title} | Jonathan Bakebwa Blog`,
       meta: [
         {
+          name: 'author',
+          content: 'Jonathan Bakebwa'
+        },
+        {
           name: 'image',
           content: shareImage
         },
@@ -82,6 +86,11 @@ export default {
         },
         {
           name: 'description',
+          content: this.page.excerpt
+        },
+        {
+          name: 'description',
+          property: 'og:description',
           content: this.page.excerpt
         },
         // OpenGraph tags
