@@ -34,6 +34,14 @@
           {{ page.nextPost.title }} &RightArrow;
         </saber-link>
       </div>
+      <div class="my-10">
+        <!-- TODO: Feed live comments to notifications so readers can see currently added comments. -->
+        <vue-disqus
+          :shortname="shortname"
+          :title="page.title"
+          :identifier="page.slug"
+        />
+      </div>
     </div>
     <base-footer />
   </main>
@@ -54,6 +62,11 @@ export default {
     page: {
       type: Object,
       default: () => ({})
+    }
+  },
+  data() {
+    return {
+      shortname: 'jbakebwa-dev'
     }
   },
   head() {

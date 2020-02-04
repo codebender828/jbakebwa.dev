@@ -1,13 +1,11 @@
 // Import plugins
+import { installAnalytics } from '@/plugins/analytics'
 import { installPluginFontAwesome } from '@/plugins/fa'
-// import { installAnalytics } from '@/plugins/analytics'
+import { installDisqus } from '@/plugins/disqus'
+
 
 export default context => {
   installPluginFontAwesome(context.Vue)
   installAnalytics(context)
+  installDisqus(context)
 }
-
-
-
-
-import { installAnalytics } from '@/plugins/analytics'
