@@ -1,5 +1,5 @@
 <template>
-  <div class="page-body blogs-container flex flex-col items-start md:p-12 p-8 bg-light h-auto">
+  <div class="page-body flex flex-col items-start md:p-12 p-8 bg-light h-auto">
     <div class="w-full title-block flex flex-col sm:flex-row mb-3 sm:justify-center sm:items-center">
       <h1 class="font-bold text-5xl mr-auto">
         Blogs
@@ -73,14 +73,12 @@ export default {
     return {
       title: 'Blogs | Jonathan Bakebwa'
     }
-  }
+  },
+  transition: 'page'
 }
 </script>
 
 <style lang="scss" scoped>
-.blogs-container {
-  width: 100vw;
-}
 
 .post {
   background: var(--white);

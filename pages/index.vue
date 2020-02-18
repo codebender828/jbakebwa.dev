@@ -141,7 +141,8 @@ export default {
     return {
       title: 'Jonathan Bakebwa'
     }
-  }
+  },
+  transition: 'page'
 }
 </script>
 
@@ -179,9 +180,5 @@ export default {
 }
 .transition {
   transition: all 0.2s ease-in-out
-}
-
-.home-container {
-  width: 100vw;
 }
 </style>

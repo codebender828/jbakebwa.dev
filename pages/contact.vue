@@ -39,7 +39,8 @@
 
 <script>
 export const attributes = {
-  layout: 'home'
+  layout: 'home',
+  transition: 'page'
 }
 
 export default {

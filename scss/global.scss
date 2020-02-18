@@ -11,3 +11,10 @@ blockquote {
   color: #6a737d;
   border-left: .25em solid #dfe2e5;
 }
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .2s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}

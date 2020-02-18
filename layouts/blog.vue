@@ -201,7 +201,6 @@ img {
 
 .page-wrapper {
   padding-top: 60px;
-  width: 100vw;
 }
 
 .hero-img-wrapper {

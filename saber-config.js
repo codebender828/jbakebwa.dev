@@ -32,5 +32,6 @@ module.exports = {
       permalinkBefore: true,
       permalinkSymbol: '🔗'
     }
-  }
+  },
+  build: { lazy: true, extractCSS: true }
 }

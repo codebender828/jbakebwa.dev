@@ -25,31 +25,31 @@
     },
     head() {
       return {
-      title: 'Jonathan Bakebwa Blog',
-      meta: [
-        {
-          name: 'description',
-          content: 'Learning with Jonathan Bakebwa - Official Blog'
-        },
-        {
-          name: 'twitter:site',
-          content: '@codebender828'
-        },
-        {
-          name: 'twitter:title',
-          content: 'Jonathan Bakebwa Blog'
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image'
-        },
-        {
-          name: 'twitter:creator',
-          content: '@codebender828'
-        }
-      ]
-    }
-    }
+        title: 'Jonathan Bakebwa Blog',
+        meta: [
+          {
+            name: 'description',
+            content: 'Learning with Jonathan Bakebwa - Official Blog'
+          },
+          {
+            name: 'twitter:site',
+            content: '@codebender828'
+          },
+          {
+            name: 'twitter:title',
+            content: 'Jonathan Bakebwa Blog'
+          },
+          {
+            name: 'twitter:card',
+            content: 'summary_large_image'
+          },
+          {
+            name: 'twitter:creator',
+            content: '@codebender828'
+          }
+        ]
+      }
+    },
   }
 </script>
 
@@ -57,6 +57,7 @@
 .page-wrapper {
   padding-top: 50px;
   height: 100vh;
+  width: inherit
 }
 
 .page-enter-active, .page-leave-active {

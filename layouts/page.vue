@@ -24,6 +24,12 @@ export default {
       default: () => ({})
     }
   },
+  methods: {
+    formatDate(v) {
+      const date = new Date(v)
+      return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
+    }
+  },
   head() {
     const pageTitle = this.page.title
     return {
@@ -32,12 +38,6 @@ export default {
         this.$siteConfig.title
     }
   },
-  methods: {
-    formatDate(v) {
-      const date = new Date(v)
-      return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
-    }
-  }
 }
 </script>
 
@@ -78,7 +78,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
-  width: 100vw;
+  max-width: 100vw;
 
   .content {
     width: inherit;
