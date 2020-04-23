@@ -38,6 +38,7 @@ export default {
         this.$siteConfig.title
     }
   },
+  transition: 'page'
 }
 </script>
 
@@ -46,26 +47,6 @@ export default {
 @import "@/scss/variables.scss";
 @import "@/scss/fonts.scss";
 @import "@/scss/global.scss";
-
-code,pre {
-  font-family: var(--fira-code);
-  padding: 0.2rem 0.4rem;
-  background: #efefef;
-  border-radius: 5px;
-
-}
-
-.saber-highlight {
-  code[class*="language-"],
-  pre[class*="language-"] {
-    font-family: var(--fira-code);
-  }
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: none;
-}
 
 html,
 body {

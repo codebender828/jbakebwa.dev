@@ -1,14 +1,17 @@
 <template>
-  <main class="page-body contact h-full w-full bg-light p-24">
+  <main
+    saber-page
+    class="page-body contact h-full w-full bg-light p-24"
+  >
     <h1 class="font-bold text-5xl">
       📝 Contact
     </h1>
     <p>
       Feel free to reach me on <a
-        class="text-maroon underline"
+        class="text-pink-800 underline"
         href="https://twitter.com/codebender828"
       >Twitter</a> and by <a
-        class="text-maroon underline"
+        class="text-pink-800 underline"
         href="mailto:excellence@jbakebwa.dev"
       >Email</a>.
     </p>
@@ -40,7 +43,6 @@
 <script>
 export const attributes = {
   layout: 'home',
-  transition: 'page'
 }
 
 export default {
@@ -50,6 +52,5 @@ export default {
       title: '📬 Contact | Jonathan Bakebwa'
     }
   },
-  transition: 'page',
 }
 </script>

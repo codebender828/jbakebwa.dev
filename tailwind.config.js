@@ -1,15 +1,7 @@
+
+
 module.exports = {
   theme: {
-    colors: {
-      red: '#DF0058',
-      maroon: '#912F56',
-      light: '#EFEFEF',
-      dirt: '#5A474E',
-      dark: '#0D090A',
-      vue: '#4FC08D',
-      gray: '#D0CCCE',
-      'dark-100': '#1B1B1B'
-    },
     extend: {
       fontFamily: {
         sans: ['Rubik'],
@@ -52,6 +44,7 @@ module.exports = {
     width: ['responsive', 'focus']
   },
   plugins: [
+    require('@tailwindcss/ui'),
     function({ addUtilities }) {
       const newUtilities = {
         '.transition-fast': {
@@ -63,5 +56,5 @@ module.exports = {
       }
       addUtilities(newUtilities)
     }
-  ]
+  ],
 }

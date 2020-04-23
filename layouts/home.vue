@@ -3,6 +3,7 @@
     <navbar />
     <slot
       class="content"
+      saber-page
     />
   </div>
 </template>
@@ -50,6 +51,7 @@
         ]
       }
     },
+    transition: 'page'
   }
 </script>
 
@@ -59,17 +61,4 @@
   height: 100vh;
   width: inherit
 }
-
-.page-enter-active, .page-leave-active {
-  .content {
-    transition: opacity 0.1s;
-  }
-}
-.page-enter, .page-leave-to {
-  .content {
-    opacity: 0;
-  }
-}
-
-
 </style>

@@ -12,18 +12,10 @@ module.exports = {
     description: 'Jonathan Bakebwa\'s personal development blog.'
   },
   plugins: [
-    {
-      resolve: 'saber-plugin-prismjs'
-    },
-    {
-      resolve: 'saber-plugin-query-posts'
-    },
-    {
-      resolve: 'saber-plugin-search'
-    },
-    {
-      resolve: 'saber-plugin-netlify-redirect'
-    }
+    { resolve: 'saber-plugin-prismjs' },
+    { resolve: 'saber-plugin-query-posts' },
+    { resolve: 'saber-plugin-search' },
+    { resolve: 'saber-plugin-netlify-redirect' }
   ],
   markdown: {
     headings: {

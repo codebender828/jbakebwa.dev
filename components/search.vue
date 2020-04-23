@@ -1,5 +1,8 @@
 <template>
-  <div class="relative search flex p-2 rounded-lg items-center relative">
+  <div
+    v-click-outside="reset"
+    class="relative search flex p-2 rounded-lg items-center relative"
+  >
     <vue-fontawesome-icon
       :icon="['fal', 'search']"
       size="1x"
@@ -10,13 +13,12 @@
       class="input bg-none placeholder-gray"
       type="text"
       placeholder="Search..."
-      @blur="results = []"
       @focus="matchResults"
     >
     <transition name="fade">
       <ul
         v-show="results.length && input !== ''"
-        class="search-results absolute bg-light rounded-lg shadow-lg p-3 z-10"
+        class="search-results absolute bg-white rounded-lg shadow-lg p-3 z-10"
       >
         <li
           v-for="result in results"
@@ -25,7 +27,7 @@
         >
           <saber-link
             :to="result.permalink"
-            class="text-sm hover:text-maroon search-title"
+            class="text-sm hover:text-pink-800 search-title"
           >
             {{ result.title }}
           </saber-link>
@@ -42,6 +44,7 @@
 
 <script>
 import Logger from '@/helpers/logger'
+import ClickOutside from 'vue-click-outside'
 
 const logger = new Logger({
   debug: true
@@ -49,6 +52,9 @@ const logger = new Logger({
 
 export default {
   name: 'Search',
+  directives: {
+    ClickOutside
+  },
   data() {
     return {
       input: '',
@@ -79,6 +85,10 @@ export default {
         else return
       })
       return matchedResults
+    },
+    reset () {
+      this.results = []
+      this.input = ''
     }
   }
 }

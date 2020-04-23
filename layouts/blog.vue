@@ -1,7 +1,10 @@
 <template>
   <main class="page-wrapper">
     <navbar />
-    <div class="content page-body pt-5 sm:pt-12 px-8 sm:px-20 md:px-56">
+    <div
+      saber-page
+      class="content page-body pt-5 sm:pt-12 px-8 sm:px-20 md:px-56"
+    >
       <section
         v-if="page.cover"
         class="hero-img-wrapper overflow-hidden rounded-lg hover:shadow-lg transition"
@@ -51,7 +54,6 @@
 import Navbar from '@/components/navbar.vue'
 import BaseFooter from '@/components/base-footer.vue'
 import generateShareCard from '@jlengstorf/get-share-image'
-// import generateShareCard from '@/helpers/share'
 
 export default {
   components: {
@@ -137,13 +139,12 @@ export default {
         }
       ]
     }
-  }
+  },
+  transition: 'page'
 }
 </script>
 
 <style lang="scss" scoped>
-@import '~prismjs/themes/prism.css';
-@import '~saber-highlight-css/default.css';
 
 h1,
 h2,
@@ -151,7 +152,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-bold mt-4;
+  @apply font-bold mt-5;
 }
 
 h1 {
@@ -192,7 +193,7 @@ ul {
 }
 
 a {
-  @apply underline text-red;
+  @apply underline text-pink-600;
 }
 
 img {
@@ -233,10 +234,10 @@ img {
 }
 
 .post-link {
-  @apply text-dark no-underline;
+  @apply text-gray-800 no-underline;
 
   &:hover {
-    @apply text-red underline;
+    @apply text-pink-600 underline;
   }
 }
 

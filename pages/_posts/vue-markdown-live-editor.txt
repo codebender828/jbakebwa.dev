@@ -1,0 +1,25 @@
+---
+title: Document you Vue components with a live editor
+date: 2020-02-18
+layout: blog
+excerpt: How to make a simple live editor component in Vue.js
+tags: 
+ - vue-live
+ - editor
+ - documentation
+cover: https://res.cloudinary.com/xtellar/image/upload/c_scale,q_52,w_1920/v1580271492/jbakebwa.dev/blog-headers/provide-inject_xcirmu.jpg
+---
+
+# Document your Vue projects with live examples
+_Published on 2020-02-18_
+
+- Origins of the idea
+- Demo
+- Tech-stack
+- Components
+
+```js {lineNumbers:true,highlightLines:['2']}
+const fruit = {
+  name: 'banana'
+}
+```

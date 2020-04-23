@@ -1,11 +1,14 @@
 <template>
-  <footer class="footer text-light sm:px-20 px-3 sm:py-8 py-3">
+  <footer
+    :class="{ unpolished }"
+    class="footer text-white sm:px-20 px-3 sm:py-8 py-3"
+  >
     <div class="flex sm:flex-row flex-col">
       <!-- Logo and Social Media -->
       <div class="logo mb-5 sm:mb-1">
         <saber-link
           to="/"
-          class="flex items-center flex-shrink-0 text-light mr-6 mb-2"
+          class="flex items-center flex-shrink-0 text-white mr-6 mb-2"
         >
           <stellar-logo
             fill-color="#fff"
@@ -13,7 +16,7 @@
           />
           <span class="font-semibold text-xl font-mono tracking-tight">Jonathan Bakebwa</span>
         </saber-link>
-        <div class="social flex text-light mt-1">
+        <div class="social flex text-white mt-1">
           <a
             class="mx-2 text-xl"
             href="https://twitter.com/codebender828"
@@ -110,6 +113,9 @@ export default {
   name: 'BaseFooter',
   components: {
     StellarLogo
+  },
+  props: {
+    unpolished: Boolean
   }
 }
 </script>
@@ -119,6 +125,10 @@ export default {
   transition: all 0.2s ease-in-out;
   background: linear-gradient(45deg, var(--red), var(--maroon));
   font-family: var(--source-sans);
+
+  &.unpolished {
+    background: linear-gradient(45deg, var(--blue), var(--royal-blue));
+  }
 }
 
 .support {

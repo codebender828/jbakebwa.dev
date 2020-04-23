@@ -5,13 +5,15 @@ export default {
     text: {
       type: String,
       default: ''
-    }
+    },
+    unpolished: Boolean
   },
   render(h) {
     return h('span', {
-      attrs: {
-        class: ['flex rounded-full bg-red hover:shadow-lg cursor-pointer uppercase px-2 py-1 text-xs font-light mr-2']
-      }
+      class: [
+        'flex rounded-full hover:shadow-lg cursor-pointer uppercase px-2 py-1 text-xs font-light mr-2',
+        this.unpolished ? 'bg-indigo-600' : 'bg-pink-600'
+      ]
     }, this.text)
   }
 }

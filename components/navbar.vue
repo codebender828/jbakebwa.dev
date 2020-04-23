@@ -1,10 +1,11 @@
 <template>
   <nav
     class="navbar flex fixed top-0 left-0 right-0 z-50 items-center justify-between flex-wrap bg-dirt px-6 py-3"
+    :class="{ unpolished }"
   >
     <saber-link
       to="/"
-      class="flex items-center flex-shrink-0 text-light mr-6"
+      class="flex items-center flex-shrink-0 text-white mr-6"
     >
       <stellar-logo
         fill-color="#fff"
@@ -16,7 +17,7 @@
       class="block md:hidden outline-none "
     >
       <button
-        class="flex items-center px-3 py-2 border focus:outline-none  rounded text-light border-light hover:text-white hover:border-white"
+        class="flex items-center px-3 py-2 border focus:outline-none  rounded text-white border-light hover:text-white hover:border-white"
         @click="showNavMenu = !showNavMenu"
       >
         <svg
@@ -30,28 +31,34 @@
       :class="{ open: showNavMenu }"
       class="nav-menu w-full block flex-grow md:flex md:items-center md:w-auto"
     >
-      <div class="text-sm md:flex font-mono text-light md:w-full">
+      <div class="text-sm md:flex font-mono text-white md:w-full">
         <saber-link
           to="/"
-          class="block mt-4 ml-auto md:inline-block md:mt-0 text-purple-200 hover:text-white mr-4"
+          class="block mt-4 ml-auto md:inline-block md:mt-0 text-white mr-5"
         >
           Home
         </saber-link>
         <saber-link
           to="/blog.html"
-          class="block mt-4 md:inline-block md:mt-0 text-purple-200 hover:text-white mr-4"
+          class="block mt-4 md:inline-block md:mt-0 text-white mr-5"
         >
           Blog
         </saber-link>
         <saber-link
+          to="/unpolished-thoughts.html"
+          class="block mt-4 md:inline-block md:mt-0 text-white mr-5"
+        >
+          Unpolished thoughts
+        </saber-link>
+        <saber-link
           to="/about.html"
-          class="block mt-4 md:inline-block md:mt-0 text-purple-200 hover:text-white mr-4"
+          class="block mt-4 md:inline-block md:mt-0 text-white mr-5"
         >
           About
         </saber-link>
         <saber-link
           to="/contact.html"
-          class="block mt-4 md:inline-block md:mt-0 text-purple-200 hover:text-white"
+          class="block mt-4 md:inline-block md:mt-0 text-white"
         >
           Contact
         </saber-link>
@@ -67,6 +74,9 @@
     components: {
       StellarLogo
     },
+    props: {
+      unpolished: Boolean
+    },
     data() {
       return {
         showNavMenu: false
@@ -80,7 +90,11 @@
   transition: all 0.2s ease-in-out;
   background: linear-gradient(45deg, var(--red), var(--maroon));
   font-family: var(--source-sans);
-  height: 60px;
+  height: auto;
+
+  &.unpolished {
+    background: linear-gradient(45deg, var(--blue), var(--royal-blue));
+  }
 }
 
 @media (max-width: 768px) {

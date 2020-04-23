@@ -1,10 +1,36 @@
 <template>
-  <div class="page-body home-container flex flex-col-reverse sm:flex-row h-full">
+  <div
+    saber-page
+    class="page-body home-container flex flex-col-reverse sm:flex-row h-full"
+  >
     <div class="w-full sm:w-2/3 flex flex-col items-start p-10 bg-light h-full">
       <div class="w-full title-block flex flex-col sm:flex-row mb-3 sm:justify-center sm:items-center">
-        <h1 class="font-bold text-5xl mr-auto">
-          Blog
-        </h1>
+        <ul class="flex mr-auto sm:w-auto w-full mb-3 sm:mb-0">
+          <button
+            type="button"
+            class="mr-3 inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-pink-700 bg-pink-100 hover:bg-pink-50 focus:outline-none focus:border-pink-300 focus:shadow-outline-pink active:bg-pink-200 transition ease-in-out duration-150"
+            @click="showPolished = true"
+          >
+            <vue-fontawesome-icon
+              :icon="['fad', 'book']"
+              size="1x"
+              class="-ml-0.5 mr-2 h-4 w-4"
+            />
+            Articles
+          </button>
+          <button
+            type="button"
+            class="ml-auto sm:ml-0 mr-0 sm:mr-3 inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150"
+            @click="showPolished = false"
+          >
+            <vue-fontawesome-icon
+              :icon="['fad', 'brain']"
+              size="1x"
+              class="-ml-0.5 mr-2 h-4 w-4"
+            />
+            Unpolished thoughts
+          </button>
+        </ul>
         <search />
       </div>
       <div
@@ -13,24 +39,29 @@
       >
         <ul>
           <li
-            v-for="post in page.posts"
+            v-for="post in posts"
             :key="post.permalink"
             class="post transition p-4 shadow-lg hover:shadow-xl rounded-lg mb-3"
           >
-            <h2 class="transition text-xl font-bold hover:text-red">
+            <h2
+              class="post-title transition text-xl font-bold hover:text-pink-600"
+              :class="{ unpolished: post.unpolished }"
+            >
               <saber-link :to="post.permalink">
                 {{ post.title }}
               </saber-link>
             </h2>
             <p
               class="excerpt opacity-75 font-light text-sm mb-3"
-              v-html="post.excerpt"
-            />
-            <div class="flex text-light">
+            >
+              {{ post.excerpt }}
+            </p>
+            <div class="flex text-white">
               <tag
                 v-for="(tag, index) in post.tags"
                 :key="index"
                 :text="tag"
+                :unpolished="post.unpolished"
               />
             </div>
             <div class="meta flex items-center mt-3">
@@ -39,19 +70,12 @@
               >
                 <vue-fontawesome-icon :icon="['fad', 'calendar-day']" /> {{ formatDate(post.createdAt) }}
               </p>
-
-              <saber-link
-                :to="post.permalink"
-                class="link transition bg-red text-light shadow-md px-2 py-2 rounded"
-              >
-                Read More <vue-fontawesome-icon :icon="['fal', 'arrow-right']" />
-              </saber-link>
             </div>
           </li>
         </ul>
       </div>
     </div>
-    <div class="profile w-full sm:w-1/3 bg-no-repeat bg-cover bg-center text-light h-full">
+    <div class="profile w-full sm:w-1/3 bg-no-repeat bg-cover bg-center text-white h-full">
       <div class="flex h-full p-10 flex-col items-center justify-center">
         <div class="rounded-full overflow-hidden h-48 w-48">
           <img
@@ -120,7 +144,6 @@ export default {
   name: 'HomePage',
   injectAllPosts: true,
   layout: 'home',
-  transition: 'page',
   components: {
     Search,
     Tag
@@ -131,10 +154,31 @@ export default {
       default: () => ({})
     }
   },
+  data () {
+    return {
+      showPolished: true
+    }
+  },
+  computed: {
+    posts() {
+      return this.page.posts.filter(post => {
+        if (this.showPolished) {
+          if (typeof post.unpolished === 'undefined') {
+            return post
+          }
+        } else {
+          if (post.unpolished) return post
+        }
+      })
+    }
+  },
   methods: {
     formatDate(v) {
       const date = new Date(v)
       return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
+    },
+    isDef (value) {
+      return typeof value !== 'undefined' || value !== false || value != null
     }
   },
   head() {
@@ -142,7 +186,6 @@ export default {
       title: 'Jonathan Bakebwa'
     }
   },
-  transition: 'page'
 }
 </script>
 
@@ -170,6 +213,15 @@ export default {
   }
 }
 
+.post-title {
+
+  &.unpolished {
+    &:hover {
+      @apply text-blue-600;
+    }
+  }
+}
+
 .profile {
   background:
   linear-gradient(
@@ -180,5 +232,9 @@ export default {
 }
 .transition {
   transition: all 0.2s ease-in-out
+}
+
+.home-container {
+  max-height: calc(100vh - 50px);
 }
 </style>

@@ -16,27 +16,22 @@
           :key="post.permalink"
           class="post transition p-4 shadow-lg hover:shadow-xl rounded-lg mb-3"
         >
-          <h2 class="transition text-xl font-bold hover:text-red">
+          <h2 class="transition text-xl font-bold hover:text-pink-600">
             <saber-link :to="post.permalink">
               {{ post.title }}
             </saber-link>
           </h2>
           <p
             class="excerpt opacity-75 font-light text-sm mb-3"
-            v-html="post.excerpt"
-          />
+          >
+            {{ post.excerpt }}
+          </p>
           <div class="meta flex items-center mt-3">
             <p
               class="text-sm opacity-75 font-light mr-auto"
             >
               <vue-fontawesome-icon :icon="['fad', 'calendar-day']" /> {{ formatDate(post.createdAt) }}
             </p>
-            <saber-link
-              :to="post.permalink"
-              class="link transition bg-red text-light shadow-md px-2 py-2 rounded"
-            >
-              Read More <vue-fontawesome-icon :icon="['fal', 'arrow-right']" />
-            </saber-link>
           </div>
         </li>
       </ul>
@@ -56,7 +51,6 @@ export default {
   components: {
     Search
   },
-  transition: 'page',
   props: {
     page: {
       type: Object,
@@ -74,7 +68,6 @@ export default {
       title: 'Blogs | Jonathan Bakebwa'
     }
   },
-  transition: 'page'
 }
 </script>
 

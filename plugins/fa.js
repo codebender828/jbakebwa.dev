@@ -11,7 +11,9 @@ import {
 // Duotone Icons
 import {
   faCalendarDay,
-  faCoffeeTogo
+  faCoffeeTogo,
+  faBrain,
+  faBook
 }
 from '@fortawesome/pro-duotone-svg-icons'
 
@@ -31,7 +33,9 @@ library.add(
   faSearch,
   faVuejs,
   faEnvelope,
-  faCoffeeTogo
+  faCoffeeTogo,
+  faBrain,
+  faBook
 )
 
 /**
