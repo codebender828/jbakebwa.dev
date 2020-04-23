@@ -1,5 +1,5 @@
 ---
-title: Questions about big Vuex store performance
+title: Questions about performance in big Vuex store
 date: 2020-04-23
 layout: unpolished
 unpolished: true
@@ -11,7 +11,7 @@ tags:
 # cover: https://res.cloudinary.com/xtellar/image/upload/c_scale,q_52,w_1240/v1587625789/jbakebwa.dev/blog-headers/performant-vuex_r5bo3k.jpg
 ---
 
-# Questions about big Vuex store performance
+# Questions about performance in big Vuex store
 
 _Published on 2020-04-23_
 <br></br>
