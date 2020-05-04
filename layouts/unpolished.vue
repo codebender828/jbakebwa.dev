@@ -37,6 +37,12 @@
           {{ page.nextPost.title }} &RightArrow;
         </saber-link>
       </div>
+      <div class="text-center text-white subscribe-panel my-4 p-10 rounded-lg">
+        <p class="italic">
+          Thanks for reading! You can subscribe to my blog to get notified whenever I publish a new unpolished thought. Cheers!
+        </p>
+        <email-subscription />
+      </div>
       <div class="my-10">
         <!-- TODO: Feed live comments to notifications so readers can see currently added comments. -->
         <vue-disqus
@@ -54,11 +60,14 @@
 import Navbar from '@/components/navbar.vue'
 import BaseFooter from '@/components/base-footer.vue'
 import generateShareCard from '@jlengstorf/get-share-image'
+import EmailSubscription from '@/components/email-subscription.vue'
+
 
 export default {
   components: {
     Navbar,
-    BaseFooter
+    BaseFooter,
+    EmailSubscription
   },
   props: {
     page: {
@@ -220,6 +229,10 @@ img {
     padding-left: 20rem;
     padding-right: 20rem;
   }
+}
+
+.subscribe-panel {
+  background: linear-gradient(-225deg, theme('colors.blue.700'), theme('colors.blue.700') 50%, theme('colors.blue.800') 50%);
 }
 
 .page-enter-active, .page-leave-active {

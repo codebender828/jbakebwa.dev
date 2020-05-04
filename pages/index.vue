@@ -3,81 +3,84 @@
     saber-page
     class="page-body home-container flex flex-col-reverse sm:flex-row h-full"
   >
-    <div class="w-full sm:w-2/3 flex flex-col items-start p-10 bg-light h-full">
-      <div class="w-full title-block flex flex-col sm:flex-row mb-3 sm:justify-center sm:items-center">
-        <ul class="flex mr-auto sm:w-auto w-full mb-3 sm:mb-0">
-          <button
-            type="button"
-            class="mr-3 inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-pink-700 bg-pink-100 hover:bg-pink-50 focus:outline-none focus:border-pink-300 focus:shadow-outline-pink active:bg-pink-200 transition ease-in-out duration-150"
-            @click="showPolished = true"
-          >
-            <vue-fontawesome-icon
-              :icon="['fad', 'book']"
-              size="1x"
-              class="-ml-0.5 mr-2 h-4 w-4"
-            />
-            Articles
-          </button>
-          <button
-            type="button"
-            class="ml-auto sm:ml-0 mr-0 sm:mr-3 inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150"
-            @click="showPolished = false"
-          >
-            <vue-fontawesome-icon
-              :icon="['fad', 'brain']"
-              size="1x"
-              class="-ml-0.5 mr-2 h-4 w-4"
-            />
-            Unpolished thoughts
-          </button>
-        </ul>
-        <search />
-      </div>
-      <div
-        v-if="page.posts"
-        class="w-full h-full overflow-y-scroll p-3"
-      >
-        <ul>
-          <li
-            v-for="post in posts"
-            :key="post.permalink"
-            class="post transition p-4 shadow-lg hover:shadow-xl rounded-lg mb-3"
-          >
-            <h2
-              class="post-title transition text-xl font-bold hover:text-pink-600"
-              :class="{ unpolished: post.unpolished }"
+    <perfect-scrollbar class="main-section w-full">
+      <div class="flex flex-col items-start p-3 sm:p-10 bg-light h-full">
+        <div class="w-full title-block flex flex-col sm:flex-row mb-3 sm:justify-center sm:items-center">
+          <ul class="flex mr-auto sm:w-auto w-full mb-3 sm:mb-0">
+            <button
+              type="button"
+              class="mr-3 inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-pink-700 bg-pink-100 hover:bg-pink-50 focus:outline-none focus:border-pink-300 focus:shadow-outline-pink active:bg-pink-200 transition ease-in-out duration-150"
+              @click="showPolished = true"
             >
-              <saber-link :to="post.permalink">
-                {{ post.title }}
-              </saber-link>
-            </h2>
-            <p
-              class="excerpt opacity-75 font-light text-sm mb-3"
-            >
-              {{ post.excerpt }}
-            </p>
-            <div class="flex text-white">
-              <tag
-                v-for="(tag, index) in post.tags"
-                :key="index"
-                :text="tag"
-                :unpolished="post.unpolished"
+              <vue-fontawesome-icon
+                :icon="['fad', 'book']"
+                size="1x"
+                class="-ml-0.5 mr-2 h-4 w-4"
               />
-            </div>
-            <div class="meta flex items-center mt-3">
-              <p
-                class="text-sm opacity-75 font-light mr-auto"
+              Articles
+            </button>
+            <button
+              type="button"
+              class="ml-auto sm:ml-0 mr-0 sm:mr-3 inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150"
+              @click="showPolished = false"
+            >
+              <vue-fontawesome-icon
+                :icon="['fad', 'brain']"
+                size="1x"
+                class="-ml-0.5 mr-2 h-4 w-4"
+              />
+              Unpolished thoughts
+            </button>
+          </ul>
+          <search />
+        </div>
+        <div
+          v-if="page.posts"
+          class="w-full h-full p-3"
+        >
+          <ul>
+            <li
+              v-for="post in posts"
+              :key="post.permalink"
+              class="post transition p-2 mb-3"
+            >
+              <h2
+                class="post-title transition text-xl font-bold hover:text-pink-600"
+                :class="{ unpolished: post.unpolished }"
               >
-                <vue-fontawesome-icon :icon="['fad', 'calendar-day']" /> {{ formatDate(post.createdAt) }}
+                <saber-link :to="post.permalink">
+                  {{ post.title }}
+                </saber-link>
+              </h2>
+              <p
+                class="excerpt opacity-75 font-light text-sm mb-3"
+              >
+                {{ post.excerpt }}
               </p>
-            </div>
-          </li>
-        </ul>
+              <div class="flex items-start text-white">
+                <span
+                  class="text-sm text-gray-800 opacity-75 font-light mr-6"
+                >
+                  <vue-fontawesome-icon :icon="['fad', 'calendar-day']" />
+                  {{ formatDate(post.createdAt) }}
+                </span>
+                <div class="flex items-start justify-end">
+                  <tag
+                    v-for="(tag, index) in post.tags"
+                    :key="index"
+                    :text="tag"
+                    :unpolished="post.unpolished"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="profile w-full sm:w-1/3 bg-no-repeat bg-cover bg-center text-white h-full">
+    </perfect-scrollbar>
+    <div class="profile bg-black text-white h-full">
       <div class="flex h-full p-10 flex-col items-center justify-center">
-        <div class="rounded-full overflow-hidden h-48 w-48">
+        <div class="rounded-full overflow-hidden flex flex-shrink-0 sm:h-32 h-24 sm:w-32 w-24">
           <img
             src="@/assets/images/profile/jonathan-bakebwa.jpeg"
             alt="Jonathan Bakebwa"
@@ -93,7 +96,7 @@
               href="https://twitter.com/codebender828"
             >
               <vue-fontawesome-icon
-                class="transition hover:text-red"
+                class="transition hover:text-teal-400"
                 :icon="['fab', 'twitter']"
                 size="2x"
               />
@@ -103,7 +106,7 @@
               href="https://github.com/codebender828"
             >
               <vue-fontawesome-icon
-                class="transition hover:text-red"
+                class="transition hover:text-teal-400"
                 :icon="['fab', 'github']"
                 size="2x"
               />
@@ -119,7 +122,7 @@
             Among other things, I like working with Javascript and Vue.js and this is where I'll share my learnings!
           </p>
           <vue-fontawesome-icon
-            class="transition hover:text-vue mt-4"
+            class="transition hover:text-teal-400 mt-4"
             :icon="['fab', 'vuejs']"
             size="2x"
           />
@@ -127,6 +130,7 @@
             Welcome to my blog!
           </p>
         </div>
+        <EmailSubscription />
       </div>
     </div>
   </div>
@@ -135,6 +139,7 @@
 <script>
 import Search from '@/components/search.vue'
 import Tag from '@/components/tag.vue'
+import EmailSubscription from '@/components/email-subscription.vue'
 
 export const attributes = {
   layout: 'home',
@@ -146,7 +151,8 @@ export default {
   layout: 'home',
   components: {
     Search,
-    Tag
+    Tag,
+    EmailSubscription
   },
   props: {
     page: {
@@ -192,6 +198,37 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/global.scss";
 
+.page-body {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.home-container {
+  height: calc(100vh - 50px);
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    height: auto;
+  }
+
+  .page-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+
+    .profile {
+      grid-row: 1/2;
+      height: auto;
+    }
+
+    .main-section {
+      grid-row: 2/3;
+      height: auto;
+    }
+  }
+}
+
 .post {
   background: var(--white);
 
@@ -222,19 +259,18 @@ export default {
   }
 }
 
-.profile {
-  background:
-  linear-gradient(
-    rgba(145, 47, 86, 0.75),
-    rgba(22, 0, 88, 0.85)
-    ),
-    url('../assets/images/giraffe-bg.jpg') no-repeat center center;
-}
 .transition {
   transition: all 0.2s ease-in-out
 }
 
-.home-container {
-  max-height: calc(100vh - 50px);
+.profile {
+  @apply w-full
+}
+
+@media (max-width: 766px) {
+  .profile {
+    @apply w-full;
+    min-width: 100vw;
+  }
 }
 </style>

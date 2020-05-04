@@ -1,10 +1,10 @@
-import VueSimpleScrollbar from 'vue-simple-scrollbar'
-import 'vue-simple-scrollbar/dist/vue-simple-scrollbar.css'
+import PerfectScrollbar from 'vue2-perfect-scrollbar'
+import 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css'
 
 /**
  * @description Installs Vue Simple Scrollbar Plugin
  * @param {Object} Vue - Vue Instance
  */
 export function installPluginVueSimpleScrollbar(Vue) {
-  Vue.component('vue-simple-scrollbar', VueSimpleScrollbar)
+  Vue.use(PerfectScrollbar)
 }

@@ -10,9 +10,12 @@ export default {
   },
   render(h) {
     return h('span', {
+      style: {
+        fontSize: '0.6rem'
+      },
       class: [
-        'flex rounded-full hover:shadow-lg cursor-pointer uppercase px-2 py-1 text-xs font-light mr-2',
-        this.unpolished ? 'bg-indigo-600' : 'bg-pink-600'
+        'flex rounded-full hover:shadow-lg cursor-pointer uppercase px-2 py-1 text-xs font-bold mr-2',
+        this.unpolished ? 'bg-indigo-200 text-indigo-700' : 'bg-pink-200 text-pink-700'
       ]
     }, this.text)
   }

@@ -3,7 +3,7 @@
     <navbar />
     <div
       saber-page
-      class="content page-body pt-5 sm:pt-12 px-8 sm:px-20 md:px-56"
+      class="pt-5 blog-content"
     >
       <section
         v-if="page.cover"
@@ -37,6 +37,12 @@
           {{ page.nextPost.title }} &RightArrow;
         </saber-link>
       </div>
+      <div class="text-center text-white subscribe-panel my-4 p-10 rounded-lg">
+        <p class="italic">
+          Thanks for reading! You can subscribe to my blog to get notified whenever I publish a new blog. Cheers!
+        </p>
+        <email-subscription />
+      </div>
       <div class="my-10">
         <!-- TODO: Feed live comments to notifications so readers can see currently added comments. -->
         <vue-disqus
@@ -53,12 +59,14 @@
 <script>
 import Navbar from '@/components/navbar.vue'
 import BaseFooter from '@/components/base-footer.vue'
+import EmailSubscription from '@/components/email-subscription.vue'
 import generateShareCard from '@jlengstorf/get-share-image'
 
 export default {
   components: {
     Navbar,
-    BaseFooter
+    BaseFooter,
+    EmailSubscription
   },
   props: {
     page: {
@@ -208,29 +216,8 @@ img {
   height: 40vh;
 }
 
-@media (min-width: 1190px) {
-  .content {
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
-}
-
-@media (min-width: 1190px) {
-  .content {
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
-}
-
-.page-enter-active, .page-leave-active {
-  .content {
-    transition: opacity 0.1s;
-  }
-}
-.page-enter, .page-leave-to {
-  .content {
-    opacity: 0;
-  }
+.subscribe-panel {
+  background: linear-gradient(-225deg, theme('colors.pink.700'), theme('colors.pink.700') 50%, theme('colors.pink.800') 50%);
 }
 
 .post-link {
@@ -241,9 +228,25 @@ img {
   }
 }
 
+.blog-content {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 992px) {
+  .blog-content {
+    max-width: 600px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .page-wrapper {
     padding-top: 72px;
+  }
+
+  .blog-content {
+    max-width: 90vw;
   }
 }
 
