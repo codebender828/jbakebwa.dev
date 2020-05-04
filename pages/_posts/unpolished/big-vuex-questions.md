@@ -3,7 +3,7 @@ title: Questions about performance in big Vuex store
 date: 2020-04-23
 layout: unpolished
 unpolished: true
-excerpt: How to use `provide` & `inject` to avoid prop drilling in Vue.js
+excerpt: Gathered thoughts and questions on how to build performant UIs with large Vuex stores.
 tags: 
  - vuex
  - performance
