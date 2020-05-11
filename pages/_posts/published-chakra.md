@@ -55,12 +55,14 @@ If you'd like to learn more about Chakra UI, check out the [Why Chakra UI page i
 
 ### Thanks, Team!
 
-Even though I am the creator of this project, I still am very grateful to these people who directly brought value to it prior to the release!
+Even though I am the original creator of this project, I still am very grateful to these people who directly brought value to it prior to the release!
 
 - **[Segun Adebayo](https://twitter.com/thesegunadebayo)** from Nigeria! He's the original creator of Chakra UI and I'm grateful for the work you've done with Chakra UI to inspire passion for accessibility in me and in the Web development community
 - **[Kelvin Omereshone](https://twitter.com/Dominus_Kelvin)** from Nigeria! He is an avid technical writer and helped us work on the docs, and also built the [Chakra UI Vue CLI Plugin](https://www.npmjs.com/package/vue-cli-plugin-chakra-ui) to get you started with Chakra UI Vue.
 - **[Mesut Koca](https://twitter.com/imesutkoca)** from Turkey! Mesut is one of the best front end engineers I know. He is the author of the [Vue Prism Editor](https://www.npmjs.com/package/vue-prism-editor). (We used this in the docs for Chakra UI Vue) Mesut helped us write tests for Chakra UI Vue!
 - **And many more people that I could not list here!**
+
+Chakra UI Vue still has room for improvement! We're still a young library and we probably have a lot that needs to be improved. I feel feel that it's future is bright going forward!
 
 ### The Future
 
