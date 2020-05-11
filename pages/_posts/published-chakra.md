@@ -49,7 +49,7 @@ I had a few reasons that motivated me to work on this project:
 
   This is a pretty hot topic in Web dev and to be honest, I cannot say that either side is terrible. I just liked the scoping that emotion gave out of the box, plus it always ensures that you only consume styles that are being used by components in your app. So the end user doesn't need to download a style sheet that they may never fully use. So there's no need to purge your CSS with external tools.
 
-  Furthermore I was spoiled by Adam Wathan's [Tailwind CSS](http://tailwindcss.com). I needed a way to combine the simplicity of applying styles in the template, while keeping responsive styles and adherence to the theme design system. In a way, Chakra UI drew a lot inspiration from Tailwind CSS and I'm happy to have ripped all these awesome ideas from Tailwind and from other really Vue.js libraries out there.
+  Furthermore I was spoiled by Adam Wathan's [Tailwind CSS](http://tailwindcss.com). I needed a way to combine the simplicity of applying styles in the template, while keeping responsive styles and adherence to the theme design system. In a way, Chakra UI drew a lot inspiration from Tailwind CSS and I'm happy to have ripped all these awesome ideas from Tailwind and from other really awesome Vue.js libraries out there.
 
 If you'd like to learn more about Chakra UI, check out the [Why Chakra UI page in the docs.](https://vue.chakra-ui.com/why-chakra-ui)
 
@@ -57,16 +57,16 @@ If you'd like to learn more about Chakra UI, check out the [Why Chakra UI page i
 
 Even though I am the original creator of this project, I still am very grateful to these people who directly brought value to it prior to the release!
 
-- **[Segun Adebayo](https://twitter.com/thesegunadebayo)** from Nigeria! He's the original creator of Chakra UI and I'm grateful for the work you've done with Chakra UI to inspire passion for accessibility in me and in the Web development community
+- **[Segun Adebayo](https://twitter.com/thesegunadebayo)** from Nigeria! He's the original creator of Chakra UI and I'm grateful for the work he's done with Chakra UI to inspire passion for accessibility in me and in the Web development community
 - **[Kelvin Omereshone](https://twitter.com/Dominus_Kelvin)** from Nigeria! He is an avid technical writer and helped us work on the docs, and also built the [Chakra UI Vue CLI Plugin](https://www.npmjs.com/package/vue-cli-plugin-chakra-ui) to get you started with Chakra UI Vue.
-- **[Mesut Koca](https://twitter.com/imesutkoca)** from Turkey! Mesut is one of the best front end engineers I know. He is the author of the [Vue Prism Editor](https://www.npmjs.com/package/vue-prism-editor). (We used this in the docs for Chakra UI Vue) Mesut helped us write tests for Chakra UI Vue!
+- **[Mesut Koca](https://twitter.com/imesutkoca)** from Turkey! Mesut is one of the smartest front end engineers I know. He is the author of the [Vue Prism Editor](https://www.npmjs.com/package/vue-prism-editor). (We used this in the docs for Chakra UI Vue) Mesut helped us write tests for Chakra UI Vue!
 - **And many more people that I could not list here!**
 
 Chakra UI Vue still has room for improvement! It's still a young library and it probably has a lot that can be improved. But I feel that it's future is bright going forward, thanks to its contributors!
 
 ### The Future
 
-In the future we have some more features coming out! When Vue 3 comes out, we're going to have some changes in the theming API to give Chakra UI Vue users even more powers and greater ability to use Chakra in their own personal projects. We felt that some of these changes would be better to have in their own major version and will be built completely for Vue 3.
+In the future we have some more features we'd like to add! When Vue 3 comes out, we're going to have some changes in the theming API to give Chakra UI Vue users even more powers and greater ability to use Chakra in their own personal projects. We felt that some of these changes would be better to have in their own major version and will be built completely for Vue 3.
 
 So for now we'll focus on making the current version of Chakra UI Vue stable!
 
