@@ -62,7 +62,7 @@ Even though I am the original creator of this project, I still am very grateful 
 - **[Mesut Koca](https://twitter.com/imesutkoca)** from Turkey! Mesut is one of the best front end engineers I know. He is the author of the [Vue Prism Editor](https://www.npmjs.com/package/vue-prism-editor). (We used this in the docs for Chakra UI Vue) Mesut helped us write tests for Chakra UI Vue!
 - **And many more people that I could not list here!**
 
-Chakra UI Vue still has room for improvement! We're still a young library and we probably have a lot that needs to be improved. I feel feel that it's future is bright going forward!
+Chakra UI Vue still has room for improvement! It's still a young library and it probably has a lot that can be improved. But I feel that it's future is bright going forward, thanks to its contributors!
 
 ### The Future
 
