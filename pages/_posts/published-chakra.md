@@ -25,7 +25,7 @@ As the name suggests, it was inspired by Segun Adebayo's Chakra UI for React! At
 
 We immediately hit it off! Segun and I were bursting with ideas in those first calls. We'd promise each other to talk for 1 hour and they'd turn into 3 - 4 hour Zoom calls. I was really excited that we shared a lot of similar values and that was when we decided to merge these two projects into one! Besides, I think that having a bigger community regardless of whether we have more opportunities for people to contribute and learn from each other!
 
-I felt to wrote about what inspired this project in the first place:
+I felt compelled to write about what inspired this project in the first place:
 
 ## Why build it?
 
