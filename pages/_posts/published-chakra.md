@@ -2,7 +2,7 @@
 title: The journey to Chakra UI Vue!
 date: 2020-05-11
 layout: blog
-excerpt: Five months of building Chakra UI Vue finally came to some kind of closure (or beginning) in last weekend! It's an achievement I am very proud!
+excerpt: Five months of building Chakra UI Vue finally came to some kind of closure (or beginning) in last weekend! It's an achievement I am proud of!
 tags: 
  - chakra
  - components
