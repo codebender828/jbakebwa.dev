@@ -211,6 +211,10 @@ img {
 
 .page-wrapper {
   padding-top: 60px;
+
+  .content {
+    width: 100vw;
+  }
 }
 
 .hero-img-wrapper {
@@ -245,6 +249,7 @@ img {
     opacity: 0;
   }
 }
+
 
 .post-link {
   @apply text-gray-800 no-underline;
