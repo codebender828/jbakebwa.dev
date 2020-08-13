@@ -263,6 +263,15 @@ img {
   .page-wrapper {
     padding-top: 72px;
   }
+
+  .hero-img-wrapper {
+    height: 20vh;
+  }
+
+  h1 {
+    @apply text-3xl my-8;
+    line-height: 1.2em;
+  }
 }
 
 </style>

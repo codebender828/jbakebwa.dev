@@ -129,6 +129,13 @@
           <p class="mt-4">
             Welcome to my blog!
           </p>
+          <button data-feedback-fish>
+            Feedback
+          </button>
+          <script
+            defer
+            src="https://feedback.fish/ff.js?pid=7612e1d34befc4"
+          />
         </div>
         <EmailSubscription />
       </div>
