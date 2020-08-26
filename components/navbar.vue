@@ -88,7 +88,7 @@
 <style lang="scss" scoped>
 .navbar {
   transition: all 0.2s ease-in-out;
-  background: linear-gradient(45deg, var(--red), var(--maroon));
+  background: linear-gradient(45deg, var(--blue), var(--royal-blue));
   font-family: var(--source-sans);
   height: auto;
 
